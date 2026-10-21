@@ -1,0 +1,64 @@
+/* Moodify presentation and editorial layout only; interaction engine is unchanged. */
+@media (min-width: 760px) { .steps { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (min-width: 1200px) { .steps { grid-template-columns: repeat(5,minmax(0,1fr)); } }
+.flow { grid-template-columns: repeat(5,minmax(0,1fr)); gap: 14px; }
+.step { padding: 22px 16px; }
+.step b { font-size: 28px; overflow-wrap: anywhere; }
+.step span { font-size: 24px; }
+.slide .tagline { font-size: 30px; }
+.close { grid-template-columns: 1fr; }
+@media screen and (max-width: 700px) {
+  .deck { height: 100dvh; }
+  .viewport { overflow: auto; display: block; }
+  .canvas { width: 100%; height: auto; transform: none !important; }
+  .slide { width: 100%; height: auto; min-height: 100%; padding: 24px 20px 48px; overflow: visible; gap: 16px; }
+  .slide h1, html[lang="ms-MY"] .slide h1 { font-size: 36px; }
+  .slide h2, html[lang="ms-MY"] .slide h2 { font-size: 28px; margin-bottom: 0; }
+  .slide p, .slide li, .slide .tagline, .slide .foot, .slide .note, .slide .src { font-size: 18px !important; }
+  .slide .kicker { font-size: 13px !important; line-height: 1.4; }
+  .msg { width: 100%; font-size: 20px; padding: 16px; }
+  .msg small { font-size: 13px; }
+  .pause { margin: 0; }
+  .pause span.ic { width: 48px; height: 48px; }
+  .pause i { height: 22px; width: 7px; }
+  .scenes, .flow, .roles, .cmp, .arch, .evid, .strip, .two, .close { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 0; }
+  .scene--main { grid-row: auto; }
+  .scene, .step, .role, .card, .zone, .nm, .strip div { padding: 16px; }
+  .step b, .scene h3, .role b, .two h3, .zone h3, .nm h3 { font-size: 20px; }
+  .step span, .role, .chip, .strip div { font-size: 18px; }
+  .chip small, .static, .gap, .card .gloss { font-size: 16px; }
+  .evid th, .evid td { font-size: 18px; padding: 12px; }
+  .evid td.n { font-size: 32px; padding: 12px; }
+  .strip b { font-size: 32px; }
+  .url { font-size: 18px; }
+  .controls { gap: 8px; padding: 10px; font-size: 14px; }
+  .controls button { min-width: 0; font-size: 14px; padding: 8px 10px; }
+  .controls .pos { min-width: 100px; }
+  .controls a { font-size: 14px; }
+}
+@media screen and (min-width: 701px) {
+  .slide:first-child { padding-block: 36px; }
+  .slide:first-child .kicker { font-size: 18px; line-height: 1.2; margin-bottom: 10px; }
+  .slide:first-child .tagline { font-size: 26px; margin: 10px 0 16px; }
+  .slide:first-child .msg { font-size: 28px; padding: 16px 24px; }
+  .slide:first-child .pause { margin: 8px 0; }
+  .slide:first-child .pause span.ic { width: 56px; height: 56px; }
+  .slide:first-child .foot { font-size: 20px; line-height: 1.3; padding-top: 12px; }
+}
+@media screen and (min-width: 701px) {
+  .slide:has(.arch) { padding-block: 36px; }
+  .slide:has(.arch) h2 { margin-bottom: 18px; }
+  .arch .zone { gap: 8px; padding: 14px 18px; }
+  .arch .chip { font-size: 24px; padding: 8px 14px; }
+  .arch .zone h3 { font-size: 24px; }
+  .arch .static { font-size: 19px; }
+  .slide:has(.arch) .note { font-size: 21px; }
+}
+@media screen and (max-width:700px) {
+  .evid { min-width: 0; }
+  .evid table { table-layout: fixed; }
+  .evid th, .evid td { padding: 8px; font-size: 16px; overflow-wrap: anywhere; }
+  .evid td.n { font-size: 26px; padding: 8px; }
+}
+/* Stable SVG metrics avoid wider fallback fonts crossing diagram boxes. */
+.diagram svg text { font-family: Arial, sans-serif; }

@@ -1,0 +1,11 @@
+name = "moodify"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+# Exact origins allowed to call the worker (scheme + host, no path, no trailing slash).
+# Your Pages origin (project pages share it): https://drmurtadha.github.io
+ALLOWED_ORIGINS = "http://localhost:8765,https://norlila01.github.io"
+MODEL = "mistralai/mistral-small-3.2-24b-instruct"
+
+# Secret, not stored here:   npx wrangler secret put OPENROUTER_API_KEY
