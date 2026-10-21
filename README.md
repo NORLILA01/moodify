@@ -38,4 +38,10 @@ Laman awam https://norlila01.github.io/moodify/ berjaya diterbitkan. Ujian pelay
 
 Contoh petua BM: “Anda boleh huraikan apa yang berlaku tanpa mengecam orang”. Contoh petua EN: “Describe the specific action needed instead of insulting”. Hasil ini mengesahkan integrasi bagi sampel ujian, bukan ketepatan atau keselamatan semua respons. Bahasa pengesan kekal bahasa Inggeris.
 
-Kod laman diterbitkan pada commit 7a0422b75d736fcc149805d83e7f2e65524e3e60; kemas kini rekod selepas itu hanya mengubah README. API key kekal dalam Cloudflare Secret, bukan kod pelayar atau repositori.
+Kod laman diterbitkan pada commit 7a0422b75d736fcc149805d83e7f2e65524e3e60; rekod itu diikuti pembetulan mudah alih di bawah. API key kekal dalam Cloudflare Secret, bukan kod pelayar atau repositori.
+
+## Semakan mudah alih dan slaid — 21 Oktober 2026
+
+Laman utama BM/EN disemak pada lebar 320/390 piksel; semua lapan slaid disemak dalam BM (390 piksel) dan EN (320 piksel). Kawasan tatal setiap slaid kini berasingan supaya slaid baharu bermula dari atas. Jadual pada telefon kecil dan kontras bahasa dipilih diperbaiki. Pautan CSS diberi versi 20261021-3 untuk mengelakkan gaya lama tersimpan dalam cache. Tiada limpahan mendatar dikesan dalam semakan stabil.
+
+Pembetulan diterbitkan sehingga commit 939ea5af85025b2ae2466b32343ee3834937287e. Enam hash JavaScript/model/Worker kekal sama dengan sebelum semakan ini; lapan aset laman awam sepadan dengan salinan tempatan. Pengujian menggunakan viewport pelayar, bukan peranti fizikal. Ujian AI tidak diulang untuk perubahan rupa ini; keputusan AI terdahulu di atas kekal sebagai rekod ujian sampel.
