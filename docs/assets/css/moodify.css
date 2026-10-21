@@ -81,10 +81,6 @@
 
 /* Home page: short reading path, optional supporting detail. */
 .moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #e5f5ef 0, transparent 52%), #f7f8fc; padding-block: clamp(2.5rem, 6vw, 5rem); }
-.hero-project { display: flex; align-items: center; gap: clamp(1rem, 2.5vw, 2rem); margin: 1rem 0 1.5rem; max-width: 760px; }
-.hero-project img { width: clamp(170px, 25vw, 275px); height: auto; flex: 0 0 auto; }
-.hero-project p { margin: 0; max-width: 34ch; color: var(--cobalt-dark); font-size: clamp(.75rem, 1.25vw, 1rem); font-weight: 800; line-height: 1.25; letter-spacing: .035em; }
-@media (max-width: 600px) { .hero-project { align-items: flex-start; gap: .85rem; margin-block: .85rem 1.2rem; } .hero-project img { width: 42vw; max-width: 190px; } .hero-project p { font-size: .68rem; } }
 .moodify-home .hero h1 { max-width: 12ch; font-size: clamp(2.6rem, 5.5vw, 4.7rem); line-height: 1.08; letter-spacing: -.045em; }
 .moodify-home .hero__lede { max-width: 42ch; font-size: 1.15rem; }
 .moodify-home .hero__context { max-width: 48ch; font-size: .85rem; }
