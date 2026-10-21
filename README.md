@@ -63,3 +63,8 @@ Bahagian Bukti dan pautan navigasinya disembunyikan atas permintaan pengguna ker
 ## Pembentangan tujuh slaid
 
 Slaid angka pengesan (97,320, precision dan recall) dikeluarkan atas permintaan pengguna supaya tidak disalah anggap sebagai hasil kajian Moodify. Aktiviti bilik darjah kini slaid 6 dan penutup slaid 7. Engine tidak diubah. Skrip latihan Word terdahulu merujuk versi lapan slaid.
+
+
+## Komik dan paparan ringkas
+
+Halaman /comic/ memaparkan komik konsep asal pengguna, ringkasan BM/EN dan pautan saiz penuh. Nota membezakan ciri cadangan daripada prototaip semasa. Halaman utama diringkaskan kepada tajuk pendek, lima kad langkah dan huraian pilihan dalam bahagian boleh buka. Privasi dan batas keberkesanan dikekalkan. 28 ujian laman lulus; enam hash engine tidak berubah. Pilihan palet baharu masih menunggu pilihan pengguna.
