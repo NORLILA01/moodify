@@ -6,9 +6,9 @@
 <title>Moodify: berlatih menulis mesej dengan hormat</title>
 <meta name="description" content="Alat latihan komunikasi untuk remaja Malaysia berumur 13–15 tahun: semak draf mesej, renungkan bagaimana ia mungkin diterima, dan tulis semula dengan perkataan anda sendiri." data-i18n-attr="content:meta.desc">
 <link rel="stylesheet" href="assets/css/site.css">
-<link rel="stylesheet" href="assets/css/moodify.css?v=20261021-3">
+<link rel="stylesheet" href="assets/css/moodify.css?v=20261021-4">
 </head>
-<body>
+<body class="moodify-home">
 <a class="skip-link" href="#try" data-i18n="skip"></a>
 
 <header class="site-header">
@@ -24,6 +24,7 @@
         <li><a href="#how" data-i18n="nav.how"></a></li>
         <li><a href="#educators" data-i18n="nav.educators"></a></li>
         <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="comic/" data-i18n="nav.comic"></a></li>
         <li><a href="presentation/" data-i18n="nav.slides"></a></li>
       </ul>
     </nav>
@@ -127,6 +128,14 @@
     </div>
   </section>
 
+
+  <section class="comic-entry section" aria-labelledby="comic-entry-title">
+    <div class="container comic-entry__grid">
+      <a href="comic/" tabindex="-1" aria-hidden="true"><img src="assets/images/moodify-comic.svg" alt="" width="1080" height="1080" loading="lazy"></a>
+      <div><p class="eyebrow" data-i18n="nav.comic"></p><h2 id="comic-entry-title" data-i18n="comic.title"></h2><p data-i18n="comic.lede"></p><a class="btn" href="comic/" data-i18n="comic.open"></a></div>
+    </div>
+  </section>
+
   <section class="section" id="how" aria-labelledby="how-title">
     <div class="container">
       <div class="section__intro">
@@ -138,8 +147,6 @@
 
 
 
-      <p class="diagram-caption text-equivalent" data-i18n="how.caption"></p>
-
       <ol class="steps">
         <li><h3 data-i18n="step.1.t"></h3><p data-i18n="step.1.d"></p></li>
         <li><h3 data-i18n="step.2.t"></h3><p data-i18n="step.2.d"></p></li>
@@ -147,6 +154,9 @@
         <li><h3 data-i18n="step.4.t"></h3><p data-i18n="step.4.d"></p></li>
         <li><h3 data-i18n="step.5.t"></h3><p data-i18n="step.5.d"></p></li>
       </ol>
+
+      <details class="read-more"><summary data-i18n="layout.learning.more"></summary>
+      <p class="diagram-caption text-equivalent" data-i18n="how.caption"></p>
 
       <h3 style="margin-top:2.5rem" data-i18n="skills.title"></h3>
       <ul class="skills">
@@ -158,6 +168,8 @@
       </ul>
       <p class="text-equivalent" style="margin-top:1rem" data-i18n="skills.note"></p>
 
+      </details>
+      <details class="read-more"><summary data-i18n="example.title"></summary>
       <h3 style="margin-top:2.5rem" data-i18n="example.title"></h3>
       <p data-i18n="example.intro"></p>
       <div class="example">
@@ -178,6 +190,7 @@
           </ol>
         </div>
       </div>
+      </details>
     </div>
   </section>
 
@@ -187,6 +200,7 @@
         <h2 id="edu-title" data-i18n="edu.title"></h2>
         <p data-i18n="edu.p1"></p>
         <p data-i18n="edu.p2"></p>
+        <details class="read-more"><summary data-i18n="edu.prompts"></summary>
         <h3 data-i18n="edu.prompts"></h3>
         <ul class="limits">
           <li data-i18n="edu.q1"></li>
@@ -194,6 +208,7 @@
           <li data-i18n="edu.q3"></li>
           <li data-i18n="edu.q4"></li>
         </ul>
+        </details>
       </div>
       <div>
         <h3 data-i18n="act.title"></h3>
@@ -260,6 +275,9 @@
         <p data-i18n="about.intro"></p>
       </div>
 
+      <p data-i18n="layout.limits"></p>
+      <p class="privacy-summary" data-i18n="layout.privacy.short"></p>
+      <details class="read-more"><summary data-i18n="layout.privacy.more"></summary>
       <h3 data-i18n="about.flow"></h3>
       <figure class="diagram diagram--wide" data-lang-block="ms">
         <!-- diagram:system-architecture.ms.svg -->
@@ -327,6 +345,7 @@
         <p data-i18n="about.p3"></p>
         <p data-i18n="about.p4"></p>
       </div>
+      </details>
     </div>
   </section>
 </main>
@@ -339,7 +358,7 @@
 </footer>
 
 <script src="detector.js"></script>
-<script src="assets/js/i18n.js"></script>
+<script src="assets/js/i18n.js?v=20261021-4"></script>
 <script src="assets/js/lang.js"></script>
 <script src="assets/js/site.js"></script>
 </body>
