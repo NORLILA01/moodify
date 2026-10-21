@@ -145,17 +145,6 @@
 .deck .zone--ext h3, .deck .gap { color: #17515A; }
 
 /* User-selectable palette. The default remains palette A. */
-.brand-splash { min-height: 100svh; display: grid; place-items: center; padding: clamp(2rem, 7vw, 6rem) 1.5rem; background: radial-gradient(circle at 15% 15%, color-mix(in srgb, var(--apricot) 70%, transparent), transparent 42%), var(--paper); text-align: center; }
-.brand-splash__inner { width: min(100%, 980px); }
-.brand-splash__logos { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); margin-bottom: 2rem; }
-.brand-splash__logos img:first-child { width: min(52vw, 360px); height: auto; }
-.brand-splash__logos img:last-child { width: min(42vw, 300px); height: auto; }
-.brand-splash__logos span { height: 70px; border-left: 2px solid var(--border-strong); }
-.brand-splash__kicker { color: var(--cobalt-dark); font-weight: 800; letter-spacing: .16em; font-size: .8rem; }
-.brand-splash h1 { max-width: 25ch; margin: .7rem auto 1rem; color: var(--ink); font-size: clamp(1.45rem, 3.5vw, 2.8rem); line-height: 1.12; letter-spacing: .01em; }
-.brand-splash__sub { max-width: 48ch; margin: 0 auto 1.8rem; color: var(--ink-soft); font-size: clamp(1rem, 2vw, 1.25rem); }
-.brand-splash .btn { text-decoration: none; }
-@media (max-width: 600px) { .brand-splash { min-height: 100svh; padding-inline: 1rem; } .brand-splash__logos { gap: .75rem; } .brand-splash__logos img:first-child { width: 48vw; } .brand-splash__logos img:last-child { width: 38vw; } .brand-splash__logos span { height: 44px; } .brand-splash h1 { font-size: 1.35rem; } }
 .palette-picker { position: fixed; z-index: 30; top: auto !important; right: 1rem; bottom: 1rem; display: flex; align-items: center; gap: .4rem; padding: .3rem .45rem .3rem .6rem; border: 1px solid var(--border); border-radius: 999px; background: color-mix(in srgb, var(--surface) 96%, transparent); box-shadow: 0 4px 14px #17343b18; font-size: .7rem; color: var(--ink); }
 .brand { display: inline-flex; align-items: center; gap: .55rem; }
 .moodify-logo { width: auto; height: 34px; max-width: 145px; object-fit: contain; }
