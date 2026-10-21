@@ -81,14 +81,16 @@
 
 /* Home page: short reading path, optional supporting detail. */
 .project-intro { padding: clamp(1.8rem, 4vw, 3.2rem) 1.5rem; background: var(--paper); border-bottom: 1px solid var(--border); }
-.project-intro__inner { width: min(1120px, 100%); margin: 0 auto; display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.8fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
-.project-intro__logo { display: grid; place-items: center; padding: 1.25rem; }
-.project-intro__logo img { display: block; width: min(100%, 340px); height: auto; }
-.project-intro__copy { max-width: 760px; }
+.project-intro__inner { width: min(1120px, 100%); margin: 0 auto; display: grid; justify-items: center; gap: 1.25rem; text-align: center; }
+.project-intro__logos { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); }
+.project-intro__logos img:first-child { display: block; width: min(42vw, 260px); height: auto; }
+.project-intro__logos img:last-child { display: block; width: min(34vw, 220px); height: auto; }
+.project-intro__logos span { height: 58px; border-left: 2px solid var(--border-strong); }
+.project-intro__copy { max-width: 880px; }
 .project-intro__kicker { margin: 0 0 .8rem; color: var(--cobalt-dark); font-size: .78rem; font-weight: 800; letter-spacing: .16em; }
-.project-intro h1 { margin: 0 0 1rem; color: var(--ink); font-size: clamp(1.35rem, 2.8vw, 2.35rem); line-height: 1.14; letter-spacing: .01em; }
+.project-intro h1 { margin: 0 0 .7rem; color: var(--ink); font-size: clamp(1.05rem, 2vw, 1.7rem); line-height: 1.18; letter-spacing: .01em; }
 .project-intro__copy > p:last-child { margin: 0; color: var(--ink-soft); font-size: clamp(1rem, 1.6vw, 1.2rem); }
-@media (max-width: 700px) { .project-intro { padding: 1.5rem 1rem; } .project-intro__inner { grid-template-columns: 1fr; gap: 1rem; text-align: center; } .project-intro__logo { padding: .4rem; } .project-intro__logo img { width: min(72vw, 280px); } .project-intro__kicker { font-size: .68rem; } .project-intro h1 { font-size: 1.25rem; } }
+@media (max-width: 700px) { .project-intro { padding: 1.5rem 1rem; } .project-intro__inner { gap: .9rem; } .project-intro__logos { gap: .7rem; } .project-intro__logos img:first-child { width: min(46vw, 210px); } .project-intro__logos img:last-child { width: min(36vw, 170px); } .project-intro__logos span { height: 40px; } .project-intro__kicker { font-size: .68rem; } .project-intro h1 { font-size: 1rem; } }
 .moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #e5f5ef 0, transparent 52%), #f7f8fc; padding-block: clamp(2.5rem, 6vw, 5rem); }
 .moodify-home .hero h1 { max-width: 12ch; font-size: clamp(2.6rem, 5.5vw, 4.7rem); line-height: 1.08; letter-spacing: -.045em; }
 .moodify-home .hero__lede { max-width: 42ch; font-size: 1.15rem; }
