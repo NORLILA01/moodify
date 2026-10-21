@@ -78,6 +78,7 @@
   .evid th:not(:first-child) { font-size: 13px; white-space: nowrap; overflow-wrap: normal; }
 }
 
+
 /* Home page: short reading path, optional supporting detail. */
 .moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #e5f5ef 0, transparent 52%), #f7f8fc; padding-block: clamp(2.5rem, 6vw, 5rem); }
 .moodify-home .hero h1 { max-width: 12ch; font-size: clamp(2.6rem, 5.5vw, 4.7rem); line-height: 1.08; letter-spacing: -.045em; }
@@ -119,3 +120,26 @@
 .comic-page details li { margin-block: .7rem; }
 .comic-end { margin-block: 2rem; }
 @media (max-width: 600px) { .comic-entry__grid { grid-template-columns: 110px minmax(0,1fr); gap: 1rem; } .comic-entry h2 { font-size: 1.55rem; } .comic-entry .btn { padding: .6rem .9rem; } }
+
+/* Selected palette A: teal, peach and warm paper. */
+:root {
+ --paper: #FFF9F3; --surface: #FFFFFF; --ink: #17343B; --ink-soft: #435D62;
+ --cobalt: #087F8C; --cobalt-dark: #066570; --lagoon: #066570;
+ --apricot: #FFD3B6; --apricot-ink: #673C27;
+ --border: #CBDDDC; --border-strong: #829F9F; --control: #58777B; --focus: #066570;
+ --ok-bg: #E5F3EE; --ok-border: #087F8C; --ok-ink: #17574E;
+ --info-bg: #E8F4F4; --info-border: #087F8C; --info-ink: #17515A;
+}
+.moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #e2f2ed 0, transparent 58%), #FFF9F3; }
+.moodify-home .steps li { background: #e8f4f1; border-color: #cbded9; }
+.moodify-home .steps li:nth-child(2n) { background: #fff0e4; }
+.moodify-home .steps p { color: var(--ink-soft); }
+.moodify-home .read-more > summary { color: #066570; }
+.comic-entry { background: #FFD3B6; }
+.comic-page { background: #FFF9F3; }
+.comic-disclosure { color: var(--ink-soft); }
+.deck .controls { background: #17343B; }
+.deck .controls button, .deck .lang-switch, .deck .lang-btn + .lang-btn { border-color: #91CFCC; }
+.deck .controls button:hover:not(:disabled), .deck .lang-btn:hover { background: #215660; }
+.deck .controls .lang-btn[aria-pressed="true"], .deck .controls .lang-btn[aria-pressed="true"]:hover { background: #FFD3B6; color: #17343B; }
+.deck .zone--ext h3, .deck .gap { color: #17515A; }
