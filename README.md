@@ -73,3 +73,8 @@ Halaman /comic/ memaparkan komik konsep asal pengguna, ringkasan BM/EN dan pauta
 ## Palet pilihan A
 
 Teal #087F8C, pic #FFD3B6 dan latar #FFF9F3 dipilih pengguna serta diterapkan pada laman utama, halaman komik dan slaid. Kontras putih pada butang teal 4.75:1. Semakan telefon 320 piksel BM/EN tiada limpahan mendatar. 28 ujian laman lulus dan enam hash engine tidak berubah. Imej komik awam berjaya dimuatkan.
+
+
+## Pemilih palet pengguna
+
+Pemilih di penjuru kanan atas menawarkan A (teal + pic), B (biru + limau) dan C (ungu + kuning). Pilihan disimpan secara setempat dalam pelayar dan hanya mengubah CSS paparan; engine, model dan Worker tidak diubah.
