@@ -68,3 +68,8 @@ Slaid angka pengesan (97,320, precision dan recall) dikeluarkan atas permintaan 
 ## Komik dan paparan ringkas
 
 Halaman /comic/ memaparkan komik konsep asal pengguna, ringkasan BM/EN dan pautan saiz penuh. Nota membezakan ciri cadangan daripada prototaip semasa. Halaman utama diringkaskan kepada tajuk pendek, lima kad langkah dan huraian pilihan dalam bahagian boleh buka. Privasi dan batas keberkesanan dikekalkan. 28 ujian laman lulus; enam hash engine tidak berubah. Pilihan palet baharu masih menunggu pilihan pengguna.
+
+
+## Palet pilihan A
+
+Teal #087F8C, pic #FFD3B6 dan latar #FFF9F3 dipilih pengguna serta diterapkan pada laman utama, halaman komik dan slaid. Kontras putih pada butang teal 4.75:1. Semakan telefon 320 piksel BM/EN tiada limpahan mendatar. 28 ujian laman lulus dan enam hash engine tidak berubah. Imej komik awam berjaya dimuatkan.
