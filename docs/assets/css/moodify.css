@@ -73,3 +73,7 @@
   .evid th:first-child { width: 40%; }
   .evid td.n { font-size: clamp(20px, 6.2vw, 26px); white-space: nowrap; overflow-wrap: normal; }
 }
+
+@media screen and (max-width: 360px) {
+  .evid th:not(:first-child) { font-size: 13px; white-space: nowrap; overflow-wrap: normal; }
+}
