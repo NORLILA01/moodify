@@ -146,6 +146,8 @@
 
 /* User-selectable palette. The default remains palette A. */
 .palette-picker { position: fixed; z-index: 30; top: .75rem; right: .9rem; display: flex; align-items: center; gap: .4rem; padding: .35rem .45rem .35rem .6rem; border: 1px solid var(--border); border-radius: 999px; background: color-mix(in srgb, var(--surface) 94%, transparent); box-shadow: 0 6px 18px #17343b20; font-size: .72rem; color: var(--ink); }
+.brand { display: inline-flex; align-items: center; gap: .55rem; }
+.utm-logo { width: auto; height: 30px; max-width: 108px; object-fit: contain; border-left: 1px solid var(--border); padding-left: .55rem; }
 .palette-picker label { font-weight: 700; white-space: nowrap; }
 .palette-picker select { max-width: 9.5rem; border: 1px solid var(--border-strong); border-radius: 999px; padding: .28rem .5rem; background: var(--surface); color: var(--ink); font: inherit; }
 html[data-palette="b"] { --paper: #F6FBFF; --surface: #FFFFFF; --ink: #18324A; --ink-soft: #486277; --cobalt: #2364A6; --cobalt-dark: #174B82; --lagoon: #247AA7; --apricot: #D8F0A8; --apricot-ink: #2E4B20; --border: #C8DCEB; --border-strong: #7C9FBA; --control: #55748C; --focus: #2364A6; --ok-bg: #E9F5D8; --ok-border: #5E9B3A; --ok-ink: #28511D; --info-bg: #E7F3FA; --info-border: #2364A6; --info-ink: #1F5373; }
@@ -161,3 +163,4 @@ html[data-palette="c"] .comic-entry { background: #FFE59A; }
 html[data-palette="b"] .comic-page { background: #F6FBFF; }
 html[data-palette="c"] .comic-page { background: #FFF9FF; }
 @media (max-width: 600px) { .palette-picker { top: .55rem; right: .55rem; } .palette-picker label { display: none; } .palette-picker select { max-width: 8.5rem; } }
+@media (max-width: 600px) { .utm-logo { height: 24px; max-width: 82px; padding-left: .35rem; } .brand { gap: .35rem; } }
