@@ -16,7 +16,7 @@ Buka http://localhost:8765. Bahasa paparan boleh ditukar melalui BM/EN. Draf dip
 
 Endpoint: https://moodify.norlilachngwork.workers.dev/coach
 
-Secret OPENROUTER_API_KEY disimpan dalam Cloudflare sahaja. Tiada secret dibundel dalam repositori. ALLOWED_ORIGINS mesti menyenaraikan origin tepat, tanpa path atau slash hujung. Tetapan CORS dan bukti pengujian laman sebenar akan dikemas kini selepas penerbitan.
+Secret OPENROUTER_API_KEY disimpan dalam Cloudflare sahaja. Tiada secret dibundel dalam repositori. ALLOWED_ORIGINS mesti menyenaraikan origin tepat, tanpa path atau slash hujung. CORS Production: `http://localhost:8765,https://norlila01.github.io`. Preflight origin GitHub Pages disahkan 204 dengan Allow-Origin tepat pada 21 Oktober 2026. GitHub Pages menerbitkan branch `main`, folder `/docs` melalui HTTPS.
 
 ## Sumber dan lesen
 
@@ -31,3 +31,11 @@ Logik engine, model dan prompt asal dikekalkan. Perubahan ialah kandungan BM/EN,
 `node --test worker/worker.test.mjs`
 
 Asas: 28 ujian laman dan 14 Worker lulus. Dua panggilan AI sebenar BM/EN pada localhost berjaya pada 21 Oktober 2026. Ujian ini bukan penilaian menyeluruh terhadap ketepatan, bias atau keberkesanan pendidikan.
+
+## Pengesahan laman sebenar 21 Oktober 2026
+
+Laman awam https://norlila01.github.io/moodify/ berjaya diterbitkan. Ujian pelayar pada laman itu lulus bagi pemuatan pengesan/model, semakan mesej biasa, pemilihan senario, draf ditandakan, pertukaran bahasa tanpa kehilangan draf/renungan, perbandingan revisi, reset dan navigasi slaid BM/EN. Dua permintaan bimbingan AI sebenar dibuat melalui butang laman (BM dan EN), menggunakan draf rekaan bahasa Inggeris yang sama; kedua-duanya memaparkan empat medan cadangan dalam bahasa sasaran.
+
+Contoh petua BM: “Anda boleh huraikan apa yang berlaku tanpa mengecam orang”. Contoh petua EN: “Describe the specific action needed instead of insulting”. Hasil ini mengesahkan integrasi bagi sampel ujian, bukan ketepatan atau keselamatan semua respons. Bahasa pengesan kekal bahasa Inggeris.
+
+Kod laman diterbitkan pada commit 7a0422b75d736fcc149805d83e7f2e65524e3e60; kemas kini rekod selepas itu hanya mengubah README. API key kekal dalam Cloudflare Secret, bukan kod pelayar atau repositori.
