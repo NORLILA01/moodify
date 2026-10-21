@@ -6,9 +6,9 @@
 (function (root) {
   "use strict";
   var E = [
+    ["layout.learning.more", "Baca lanjut tentang pendekatan pembelajaran", "Read more about the learning approach"],
     ["layout.privacy.more", "Privasi, batas prototaip dan aliran data", "Privacy, prototype limits and data flow"],
     ["layout.privacy.short", "Semakan awal dalam pelayar. Hanya permintaan bimbingan AI menghantar draf ke perkhidmatan luar. Gunakan contoh rekaan tanpa maklumat sulit.", "The first check runs in your browser. Only an AI coaching request sends your draft to external services. Use fictional examples without confidential information."],
-    ["layout.learning.more", "Baca lanjut tentang pendekatan pembelajaran", "Read more about the learning approach"],
     ["nav.comic", "Komik", "Comic"],
     ["comic.title", "Satu konflik. Pilihan baharu.", "One conflict. A new choice."],
     ["comic.lede", "Ikuti Amir berlatih respons bersama Cikgu Aina.", "Follow Amir as he practises a response with Cikgu Aina."],
