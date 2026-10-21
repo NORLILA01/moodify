@@ -9,9 +9,11 @@
 .close { grid-template-columns: 1fr; }
 @media screen and (max-width: 700px) {
   .deck { height: 100dvh; }
-  .viewport { overflow: auto; display: block; }
-  .canvas { width: 100%; height: auto; transform: none !important; }
-  .slide { width: 100%; height: auto; min-height: 100%; padding: 24px 20px 48px; overflow: visible; gap: 16px; }
+  .viewport { overflow: hidden; display: block; }
+  .canvas { width: 100%; height: 100%; transform: none !important; }
+  .slide { width: 100%; height: 100%; min-height: 0; padding: 24px 20px 32px; overflow-x: hidden; overflow-y: auto; gap: 16px; }
+  .slide > * { flex-shrink: 0; }
+  .slide .num { position: static; align-self: flex-end; margin-top: auto; padding-top: 12px; }
   .slide h1, html[lang="ms-MY"] .slide h1 { font-size: 36px; }
   .slide h2, html[lang="ms-MY"] .slide h2 { font-size: 28px; margin-bottom: 0; }
   .slide p, .slide li, .slide .tagline, .slide .foot, .slide .note, .slide .src { font-size: 18px !important; }
@@ -62,3 +64,7 @@
 }
 /* Stable SVG metrics avoid wider fallback fonts crossing diagram boxes. */
 .diagram svg text { font-family: Arial, sans-serif; }
+
+/* Keep selected language readable when a touch browser retains hover. */
+.controls .lang-btn[aria-pressed="true"],
+.controls .lang-btn[aria-pressed="true"]:hover { background: #fff; color: #0E1B2E; }
