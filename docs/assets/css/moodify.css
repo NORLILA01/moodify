@@ -143,3 +143,21 @@
 .deck .controls button:hover:not(:disabled), .deck .lang-btn:hover { background: #215660; }
 .deck .controls .lang-btn[aria-pressed="true"], .deck .controls .lang-btn[aria-pressed="true"]:hover { background: #FFD3B6; color: #17343B; }
 .deck .zone--ext h3, .deck .gap { color: #17515A; }
+
+/* User-selectable palette. The default remains palette A. */
+.palette-picker { position: fixed; z-index: 30; top: .75rem; right: .9rem; display: flex; align-items: center; gap: .4rem; padding: .35rem .45rem .35rem .6rem; border: 1px solid var(--border); border-radius: 999px; background: color-mix(in srgb, var(--surface) 94%, transparent); box-shadow: 0 6px 18px #17343b20; font-size: .72rem; color: var(--ink); }
+.palette-picker label { font-weight: 700; white-space: nowrap; }
+.palette-picker select { max-width: 9.5rem; border: 1px solid var(--border-strong); border-radius: 999px; padding: .28rem .5rem; background: var(--surface); color: var(--ink); font: inherit; }
+html[data-palette="b"] { --paper: #F6FBFF; --surface: #FFFFFF; --ink: #18324A; --ink-soft: #486277; --cobalt: #2364A6; --cobalt-dark: #174B82; --lagoon: #247AA7; --apricot: #D8F0A8; --apricot-ink: #2E4B20; --border: #C8DCEB; --border-strong: #7C9FBA; --control: #55748C; --focus: #2364A6; --ok-bg: #E9F5D8; --ok-border: #5E9B3A; --ok-ink: #28511D; --info-bg: #E7F3FA; --info-border: #2364A6; --info-ink: #1F5373; }
+html[data-palette="c"] { --paper: #FFF9FF; --surface: #FFFFFF; --ink: #34204B; --ink-soft: #675474; --cobalt: #7048A8; --cobalt-dark: #563586; --lagoon: #8B5FC2; --apricot: #FFE59A; --apricot-ink: #59430C; --border: #E0D2EA; --border-strong: #A98BC2; --control: #755D88; --focus: #7048A8; --ok-bg: #F2EAF9; --ok-border: #7048A8; --ok-ink: #4D286B; --info-bg: #F4EDFA; --info-border: #7048A8; --info-ink: #563B70; }
+html[data-palette="b"] .moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #e5f2ff 0, transparent 58%), #F6FBFF; }
+html[data-palette="c"] .moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #f1e7fb 0, transparent 58%), #FFF9FF; }
+html[data-palette="b"] .moodify-home .steps li { background: #edf7df; border-color: #d5e7bd; }
+html[data-palette="c"] .moodify-home .steps li { background: #f4edfa; border-color: #e0d2ea; }
+html[data-palette="b"] .moodify-home .steps li:nth-child(2n) { background: #e8f3fc; }
+html[data-palette="c"] .moodify-home .steps li:nth-child(2n) { background: #fff4cc; }
+html[data-palette="b"] .comic-entry { background: #D8F0A8; }
+html[data-palette="c"] .comic-entry { background: #FFE59A; }
+html[data-palette="b"] .comic-page { background: #F6FBFF; }
+html[data-palette="c"] .comic-page { background: #FFF9FF; }
+@media (max-width: 600px) { .palette-picker { top: .55rem; right: .55rem; } .palette-picker label { display: none; } .palette-picker select { max-width: 8.5rem; } }
