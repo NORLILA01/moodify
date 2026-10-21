@@ -45,3 +45,11 @@ Kod laman diterbitkan pada commit 7a0422b75d736fcc149805d83e7f2e65524e3e60; reko
 Laman utama BM/EN disemak pada lebar 320/390 piksel; semua lapan slaid disemak dalam BM (390 piksel) dan EN (320 piksel). Kawasan tatal setiap slaid kini berasingan supaya slaid baharu bermula dari atas. Jadual pada telefon kecil dan kontras bahasa dipilih diperbaiki. Pautan CSS diberi versi 20261021-3 untuk mengelakkan gaya lama tersimpan dalam cache. Tiada limpahan mendatar dikesan dalam semakan stabil.
 
 Pembetulan diterbitkan sehingga commit 939ea5af85025b2ae2466b32343ee3834937287e. Enam hash JavaScript/model/Worker kekal sama dengan sebelum semakan ini; lapan aset laman awam sepadan dengan salinan tempatan. Pengujian menggunakan viewport pelayar, bukan peranti fizikal. Ujian AI tidak diulang untuk perubahan rupa ini; keputusan AI terdahulu di atas kekal sebagai rekod ujian sampel.
+
+## Semakan akhir fungsi laman awam — 21 Oktober 2026
+
+Semakan semula berjaya bagi mesej biasa, draf ditandakan, senario, contoh bergilir, butiran teknikal, renungan, revisi dan reset. Pertukaran BM/EN mengekalkan draf, renungan dan revisi serta menterjemahkan keputusan. Semua lapan slaid boleh dilalui maju/mundur dalam kedua-dua bahasa; Next dilumpuhkan pada slaid terakhir.
+
+Dua respons AI sebenar baharu disahkan melalui butang laman, satu dalam BM dan satu dalam EN, menggunakan draf rekaan Inggeris yang sama. Petua BM: “Anda boleh huraikan tugasan yang tidak siap dan minta bantuan”. Petua EN: “Describe the specific action you need without insulting”. Empat medan cadangan lengkap diterima dalam kedua-dua bahasa. Satu permintaan BM tambahan dibuat semasa semakan pertukaran bahasa; penilaian respons yang direkodkan ialah dua respons lengkap di atas.
+
+28 ujian laman dan 14 ujian Worker lulus (42/42). Lapan aset awam sepadan bait demi bait dengan salinan tempatan. Enam hash engine kekal sama. Tiada masalah baharu ditemui dan tiada perubahan kod diperlukan. Kegagalan rangkaian, had kadar, pembatalan permintaan dan paparan teks AI diuji dengan mock dalam regresi; kegagalan perkhidmatan tidak dicetuskan pada produksi. Hasil AI ini ialah ujian integrasi sampel, bukan pengesahan ketepatan semua jawapan; pengesan masih untuk bahasa Inggeris.
