@@ -68,3 +68,8 @@
 /* Keep selected language readable when a touch browser retains hover. */
 .controls .lang-btn[aria-pressed="true"],
 .controls .lang-btn[aria-pressed="true"]:hover { background: #fff; color: #0E1B2E; }
+
+@media screen and (max-width: 700px) {
+  .evid th:first-child { width: 40%; }
+  .evid td.n { font-size: clamp(20px, 6.2vw, 26px); white-space: nowrap; overflow-wrap: normal; }
+}
