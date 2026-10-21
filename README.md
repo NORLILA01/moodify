@@ -53,3 +53,8 @@ Semakan semula berjaya bagi mesej biasa, draf ditandakan, senario, contoh bergil
 Dua respons AI sebenar baharu disahkan melalui butang laman, satu dalam BM dan satu dalam EN, menggunakan draf rekaan Inggeris yang sama. Petua BM: “Anda boleh huraikan tugasan yang tidak siap dan minta bantuan”. Petua EN: “Describe the specific action you need without insulting”. Empat medan cadangan lengkap diterima dalam kedua-dua bahasa. Satu permintaan BM tambahan dibuat semasa semakan pertukaran bahasa; penilaian respons yang direkodkan ialah dua respons lengkap di atas.
 
 28 ujian laman dan 14 ujian Worker lulus (42/42). Lapan aset awam sepadan bait demi bait dengan salinan tempatan. Enam hash engine kekal sama. Tiada masalah baharu ditemui dan tiada perubahan kod diperlukan. Kegagalan rangkaian, had kadar, pembatalan permintaan dan paparan teks AI diuji dengan mock dalam regresi; kegagalan perkhidmatan tidak dicetuskan pada produksi. Hasil AI ini ialah ujian integrasi sampel, bukan pengesahan ketepatan semua jawapan; pengesan masih untuk bahasa Inggeris.
+
+
+## Paparan bukti disembunyikan
+
+Bahagian Bukti dan pautan navigasinya disembunyikan atas permintaan pengguna kerana Moodify belum diuji pada peserta sebenar. Kenyataan batas keberkesanan pada pengenalan kekal. Engine, model, Worker dan slaid tidak diubah.
