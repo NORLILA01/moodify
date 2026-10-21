@@ -58,3 +58,8 @@ Dua respons AI sebenar baharu disahkan melalui butang laman, satu dalam BM dan s
 ## Paparan bukti disembunyikan
 
 Bahagian Bukti dan pautan navigasinya disembunyikan atas permintaan pengguna kerana Moodify belum diuji pada peserta sebenar. Kenyataan batas keberkesanan pada pengenalan kekal. Engine, model, Worker dan slaid tidak diubah.
+
+
+## Pembentangan tujuh slaid
+
+Slaid angka pengesan (97,320, precision dan recall) dikeluarkan atas permintaan pengguna supaya tidak disalah anggap sebagai hasil kajian Moodify. Aktiviti bilik darjah kini slaid 6 dan penutup slaid 7. Engine tidak diubah. Skrip latihan Word terdahulu merujuk versi lapan slaid.
