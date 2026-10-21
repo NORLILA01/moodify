@@ -6,6 +6,28 @@
 (function (root) {
   "use strict";
   var E = [
+    ["layout.privacy.more", "Privasi, batas prototaip dan aliran data", "Privacy, prototype limits and data flow"],
+    ["layout.privacy.short", "Semakan awal dalam pelayar. Hanya permintaan bimbingan AI menghantar draf ke perkhidmatan luar. Gunakan contoh rekaan tanpa maklumat sulit.", "The first check runs in your browser. Only an AI coaching request sends your draft to external services. Use fictional examples without confidential information."],
+    ["layout.learning.more", "Baca lanjut tentang pendekatan pembelajaran", "Read more about the learning approach"],
+    ["nav.comic", "Komik", "Comic"],
+    ["comic.title", "Satu konflik. Pilihan baharu.", "One conflict. A new choice."],
+    ["comic.lede", "Ikuti Amir berlatih respons bersama Cikgu Aina.", "Follow Amir as he practises a response with Cikgu Aina."],
+    ["comic.open", "Baca komik", "Read the comic"],
+    ["comic.back", "Kembali ke Moodify", "Back to Moodify"],
+    ["comic.notice", "Komik konsep, bukan rakaman aplikasi. Sorotan frasa, kad A/B/C dan butang simpan ialah cadangan reka bentuk. Keberkesanan pada pelajar belum diuji.", "A concept comic, not an application recording. Phrase highlighting, A/B/C cards and the save button are proposed features. Effectiveness with students has not been tested."],
+    ["comic.image.note", "Teks dalam imej asal ialah English. Buka ringkasan BM di bawah untuk mengikuti ceritanya.", "The original comic uses English. Open the summary below to follow the story."],
+    ["comic.full", "Buka imej saiz penuh", "Open full-size image"],
+    ["comic.summary", "Ringkasan cerita", "Story summary"],
+    ["comic.s1", "Amir memilih situasi konflik tugasan kumpulan dengan bimbingan Cikgu Aina.", "Amir chooses a group-assignment conflict with Cikgu Aina’s guidance."],
+    ["comic.s2", "Dia menulis respons awal kerana berasa tuduhan rakannya tidak adil.", "He writes his first response because he feels his classmate’s accusation is unfair."],
+    ["comic.s3", "Dia meneliti pilihan kata yang boleh meningkatkan konflik.", "He reviews wording that could escalate the conflict."],
+    ["comic.s4", "Dia menamakan rasa marah dan malu, serta matlamat untuk menghentikan penghinaan.", "He names anger and embarrassment, and his goal of stopping the insults."],
+    ["comic.s5", "Dia membandingkan pilihan: tetapkan batas, semak kerja bersama atau berehat seketika.", "He compares options: set a boundary, review the work together or take a break."],
+    ["comic.s6", "Dia menjelaskan pilihan dan menjangka kemungkinan kesannya.", "He explains his choice and anticipates possible consequences."],
+    ["comic.s7", "Dia membuang penghinaan, mengekalkan batas dan mencadangkan semakan kerja bersama.", "He removes the insult, keeps his boundary and suggests reviewing the work together."],
+    ["comic.s8", "Dia masih boleh berasa kecewa. Guru menyokong pilihan respons dan mengingatkannya supaya meminta bantuan jika tidak selamat.", "He may still feel upset. His teacher supports his response choice and reminds him to seek help if he feels unsafe."],
+    ["comic.try", "Sekarang cuba senario anda", "Now try a scenario"],
+    ["layout.limits", "RAG dan pengesanan berbilang bahasa masih cadangan, bukan fungsi semasa.", "RAG and multilingual detection remain proposed features, not current functions."],
     // ---- document ----
     ["meta.title", "Moodify: latihan respons berhemah", "Moodify: practise considered responses"],
     ["meta.desc", "Prototaip latihan respons konflik sekolah untuk remaja Malaysia berumur 13–15 tahun, di bawah bimbingan guru.", "A supervised school-conflict response practice prototype for Malaysian adolescents aged 13–15."],
@@ -25,12 +47,12 @@
 
     // ---- hero ----
     ["hero.eyebrow", "Moodify · Remaja 13–15 tahun · Bimbingan guru", "Moodify · Ages 13–15 · Teacher supervision"],
-    ["hero.h1a", "Kenali emosi. Pertimbangkan kesan.", "Notice emotions. Consider consequences."],
-    ["hero.h1b", "Pilih respons yang lebih berhemah.", "Choose a more considered response."],
-    ["hero.lede", "Berlatih menghadapi konflik sekolah sebelum bertindak. Tulis respons anda, semak pilihan kata, kenal pasti emosi dan matlamat, bandingkan pilihan, kemudian nilai dan tulis semula. Anda membuat keputusan akhir bersama bimbingan guru.", "Rehearse a school conflict before acting. Write your response, check wording, identify emotions and goals, compare options, then evaluate and revise. You make the final choice with teacher guidance."],
+    ["hero.h1a", "Jeda seketika.", "Pause a moment."],
+    ["hero.h1b", "Pilih kata anda.", "Choose your words."],
+    ["hero.lede", "Latih respons konflik sekolah. Kenali emosi, fikirkan kesan dan tulis semula bersama guru.", "Practise a school-conflict response. Notice emotions, consider the impact and revise with your teacher."],
     ["hero.cta.try", "Cuba penyemak mesej", "Try the message checker"],
-    ["hero.cta.how", "Terokai pendekatan pembelajaran", "Explore the learning approach"],
-    ["hero.context", "Moodify masih pada tahap reka bentuk. Salinan demonstrasi ini menggunakan engine rujukan; RAG dan pengesanan berbilang bahasa yang dicadangkan belum dilaksanakan. Keberkesanan belum diuji.", "Moodify is at the design stage. This demonstration uses the reference engine; proposed RAG and multilingual detection are not implemented. Effectiveness has not been tested."],
+    ["hero.cta.how", "Lihat 5 langkah", "Explore 5 steps"],
+    ["hero.context", "Demonstrasi tahap reka bentuk. Keberkesanan pada pelajar belum diuji.", "Design-stage demonstration. Effectiveness with students has not been tested."],
     ["exchange.draftLabel", "Draf ilustrasi", "Illustrative draft"],
     ["exchange.revLabel", "Versi yang dipertimbangkan", "Considered revision"],
     ["exchange.pause", "Jeda", "Pause"],
@@ -43,7 +65,7 @@
 
     // ---- checker ----
     ["try.title", "Mulakan dengan draf", "Start with a draft"],
-    ["try.intro", "Tulis mesej dalam bahasa Inggeris sehingga 500 aksara, atau pilih senario latihan rekaan. Semakan pertama berjalan dalam pelayar anda. Jika pilihan kata anda ditandakan, anda boleh membaca petua setempat atau memilih bimbingan AI. Anda yang menentukan apa yang hendak diubah.", "Write an English message of up to 500 characters, or choose a fictional practice scenario. The first check runs in your browser. If your wording is flagged, you can read local tips or choose AI coaching. You decide what to change."],
+    ["try.intro", "Pilih senario atau tulis draf English sehingga 500 aksara. Semak, renungkan dan tulis semula.", "Choose a scenario or write an English draft up to 500 characters. Check, reflect and revise."],
     ["notice.lang", "Versi semasa menyemak mesej dalam bahasa Inggeris. Ketepatan bagi mesej Bahasa Melayu atau bahasa bercampur belum dinilai.", "The current version checks English messages. Performance on Malay or mixed-language messages has not been evaluated."],
     ["scen.title", "Senario latihan rekaan", "Fictional practice scenarios"],
     ["scen.hint", "Memilih satu akan mengisi editor. Ia tidak menjalankan semakan atau menghantar apa-apa.", "Choosing one fills the editor. It does not run a check or send anything."],
@@ -140,17 +162,17 @@
     ["rev.note", "Lulus semakan bukan ukuran pembelajaran. Bandingkan kedua-dua versi dan terangkan pilihan anda.", "Passing the checker is not a measure of learning. Compare the two versions and explain your choices."],
 
     // ---- how it helps ----
-    ["how.title", "Lima langkah pembelajaran Moodify", "Moodify’s five learning steps"],
-    ["how.intro", "Konflik sekolah menjadi latihan peribadi dengan bimbingan guru. Urutan ini berasaskan Konstruktivisme, Teori Kognitif Sosial, kerangka kecerdasan emosi Goleman dan Model Keagresifan Umum. AI memberi cadangan; pelajar menentukan respons.", "School conflicts become private, teacher-supervised rehearsals. The sequence draws on Constructivism, Social Cognitive Theory, Goleman’s emotional-intelligence framework and the General Aggression Model. AI suggests; the student decides."],
-    ["how.caption", "Urutan cadangan: Tulis → Kesan → Jeda dan Kenal Pasti → Bandingkan → Nilai dan Tulis Semula. Dalam demonstrasi ini, guru membimbing pengenalpastian emosi, perbandingan pilihan dan jangkaan akibat; RAG belum tersedia.", "Proposed sequence: Write → Detect → Pause and Identify → Compare → Evaluate and Revise. In this demonstration, teachers guide emotion identification, comparison and consequence prediction; RAG is not available."],
+    ["how.title", "5 langkah untuk berlatih", "5 steps to practise"],
+    ["how.intro", "AI mencadangkan. Anda memilih. Guru membimbing.", "AI suggests. You choose. Your teacher guides."],
+    ["how.caption", "Urutan cadangan Moodify berasaskan Konstruktivisme, Teori Kognitif Sosial, kerangka kecerdasan emosi Goleman dan Model Keagresifan Umum. Guru membimbing renungan dan perbandingan. RAG belum tersedia.", "The proposed Moodify sequence draws on Constructivism, Social Cognitive Theory, Goleman’s emotional-intelligence framework and the General Aggression Model. Teachers guide reflection and comparison. RAG is not available."],
     ["step.1.t", "Tulis", "Write"],
-    ["step.1.d", "Baca konflik sekolah rekaan dan tulis respons awal dengan perkataan sendiri.", "Read a fictional school conflict and write your own initial response."],
+    ["step.1.d", "Tulis respons awal untuk situasi rekaan.", "Write your first response to a fictional situation."],
     ["step.2.t", "Kesan", "Detect"],
-    ["step.2.d", "Semak pilihan kata yang mungkin meningkatkan konflik. Pengesan menilai teks, bukan peribadi pelajar.", "Check wording that may escalate conflict. The detector examines text, not the student’s character."],
+    ["step.2.d", "Semak pilihan kata, bukan peribadi pelajar.", "Check the wording, not the student’s character."],
     ["step.3.t", "Jeda dan Kenal Pasti", "Pause and Identify"],
-    ["step.3.d", "Berhenti sejenak. Dalam ruang renungan, namakan emosi dan matlamat anda bersama guru.", "Pause. In the reflection field, name your emotion and goal with your teacher."],
+    ["step.3.d", "Namakan emosi dan matlamat bersama guru.", "Name your emotion and goal with your teacher."],
     ["step.4.t", "Bandingkan", "Compare"],
-    ["step.4.d", "Bandingkan draf dengan petua atau contoh respons berhemah bersama guru. Bimbingan AI pilihan bukan sistem RAG Moodify.", "Compare your draft with tips or considered responses with your teacher. Optional AI coaching is not Moodify’s proposed RAG system."],
+    ["step.4.d", "Pertimbangkan petua, pilihan respons dan kesannya.", "Consider tips, response options and their impact."],
     ["skills.title", "Apa yang pelajar latih", "What students practise"],
     ["skill.1", "**Kesedaran emosi:** nyatakan kemungkinan perasaan atau keperluan dengan perkataan.", "**Emotional awareness:** put a possible feeling or need into words."],
     ["skill.2", "**Mengambil perspektif:** pertimbangkan bagaimana orang lain mungkin membaca mesej.", "**Perspective-taking:** consider how another person might read a message."],
@@ -170,7 +192,7 @@
     ["example.note.c", "**Permintaan:** memberi langkah seterusnya yang konkrit.", "**Request:** gives a concrete next step."],
 
     ["step.5.t", "Nilai dan Tulis Semula", "Evaluate and Revise"],
-    ["step.5.d", "Jangka kesan setiap pilihan, tulis respons baharu dan terangkan sebab pilihan anda. Semak semula pilihan kata.", "Predict each option’s consequences, revise your response and explain your choice. Recheck the wording."],
+    ["step.5.d", "Tulis semula dan jelaskan pilihan anda.", "Revise and explain your choice."],
     ["deck.s3.5t", "5 · Nilai dan Tulis Semula", "5 · Evaluate and Revise"],
     ["deck.s3.5d", "Jangka akibat, tulis semula dan jelaskan sebab", "Predict consequences, revise and explain why"],
     // ---- educators ----
@@ -216,7 +238,7 @@
 
     // ---- about / privacy ----
     ["about.title", "Tentang projek dan privasi anda", "About the project and your privacy"],
-    ["about.intro", "Moodify oleh Norlila Binti Amin Chng bersama Zakiah Binti Mohamad Ashari, Universiti Teknologi Malaysia, mencadangkan pedagogi AI terbatas untuk remaja Malaysia berumur 13–15. Salinan demonstrasi ini menyesuaikan kandungan Think Before You Send berlesen MIT. RAG, bank senario pakar dan pengesanan berbilang bahasa kekal sebagai cadangan penyelidikan.", "Moodify by Norlila Binti Amin Chng with Zakiah Binti Mohamad Ashari, Universiti Teknologi Malaysia, proposes a bounded AI pedagogy for Malaysian adolescents aged 13–15. This demonstration adapts content from MIT-licensed Think Before You Send. RAG, an expert-reviewed scenario bank and multilingual detection remain research proposals."],
+    ["about.intro", "Moodify oleh Norlila Binti Amin Chng bersama Zakiah Binti Mohamad Ashari, UTM. Adaptasi pendidikan Think Before You Send (MIT).", "Moodify by Norlila Binti Amin Chng with Zakiah Binti Mohamad Ashari, UTM. An educational adaptation of Think Before You Send (MIT)."],
     ["about.flow", "Bagaimana maklumat bergerak", "How information moves"],
     ["about.p1", "Semakan pertama berjalan dalam pelayar anda. Jika anda meminta bimbingan AI, draf yang disemak dihantar melalui Cloudflare Worker ke OpenRouter dan penyedia model yang dikonfigurasikan. Dasar pemprosesan mereka terpakai.", "The first check runs in your browser. If you request AI coaching, the checked draft is sent through a Cloudflare Worker to OpenRouter and the configured model provider. Their processing policies apply."],
     ["about.s1", "GitHub Pages menghantar laman web dan fail pengesan ke pelayar.", "GitHub Pages sends the website and detector files to the browser."],
