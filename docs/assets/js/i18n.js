@@ -349,12 +349,13 @@
     ["deck.slideLabel", "Slaid {n} daripada {total}: {title}", "Slide {n} of {total}: {title}"]
   ];
 
-  var ms = {}, en = {}, keys = [];
+  var ms = {}, en = {}, zh = {}, keys = [];
   E.forEach(function (e) {
     if (ms.hasOwnProperty(e[0])) throw new Error("duplicate i18n key: " + e[0]);
-    ms[e[0]] = e[1]; en[e[0]] = e[2]; keys.push(e[0]);
+    ms[e[0]] = e[1]; en[e[0]] = e[2]; zh[e[0]] = e[3] || e[2]; keys.push(e[0]);
   });
-  var api = { ms: ms, en: en, keys: keys };
+  zh["nav.try"]="试用"; zh["nav.how"]="功能介绍"; zh["nav.educators"]="给教育工作者"; zh["nav.about"]="关于"; zh["nav.comic"]="漫画"; zh["nav.slides"]="演示文稿"; zh["status.lang.zh"]="显示语言：中文。"; zh["lang.group"]="语言选择"; zh["try.title"]="从草稿开始"; zh["how.title"]="练习的五个步骤";
+  var api = { ms: ms, en: en, zh: zh, keys: keys };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.TBYS_I18N = api;
 })(typeof self !== "undefined" ? self : this);
