@@ -355,6 +355,10 @@
     ms[e[0]] = e[1]; en[e[0]] = e[2]; zh[e[0]] = e[3] || e[2]; keys.push(e[0]);
   });
   zh["nav.try"]="试用"; zh["nav.how"]="功能介绍"; zh["nav.educators"]="给教育工作者"; zh["nav.about"]="关于"; zh["nav.comic"]="漫画"; zh["nav.slides"]="演示文稿"; zh["status.lang.zh"]="显示语言：中文。"; zh["lang.group"]="语言选择"; zh["try.title"]="从草稿开始"; zh["how.title"]="练习的五个步骤";
+  zh["meta.title"]="Moodify：练习有礼貌地表达"; zh["skip"]="跳转到消息检查器"; zh["hero.eyebrow"]="MOODIFY · 13至15岁 · 教师指导"; zh["hero.h1a"]="暂停一下。"; zh["hero.h1b"]="选择你的用词。"; zh["hero.lede"]="练习处理校园冲突的回应。留意情绪，思考影响，并与老师一起修改。"; zh["hero.cta.try"]="尝试消息检查器"; zh["hero.cta.how"]="了解五个步骤"; zh["hero.context"]="设计阶段演示。学生学习成效尚未测试。";
+  zh["try.intro"]="选择情境或输入不超过500个字符的英文草稿。检查、反思并修改。"; zh["notice.lang"]="当前版本检查英文消息。马来文或混合语言的表现尚未评估。"; zh["scen.title"]="虚构练习情境"; zh["scen.hint"]="选择情境会填入编辑器，不会立即检查或发送。"; zh["draft.label"]="你的消息草稿"; zh["draft.hint"]="仅限英文，最多500个字符。请勿输入个人或机密资料。"; zh["draft.placeholder"]="在这里写下你的消息……"; zh["check.btn"]="检查我的消息"; zh["privacy.line"]="检查在浏览器中进行，只有你主动要求 AI 指导时才会发送草稿。";
+  zh["step.1.t"]="写下"; zh["step.1.d"]="为虚构情境写下第一份回应。"; zh["step.2.t"]="观察影响"; zh["step.2.d"]="检查用词，而不是评判学生本人。"; zh["step.3.t"]="暂停并辨识"; zh["step.3.d"]="与老师一起说出情绪和目标。"; zh["step.4.t"]="比较"; zh["step.4.d"]="思考提示、回应选项及其影响。"; zh["step.5.t"]="评估并修改"; zh["step.5.d"]="重新写作，并解释你的选择。";
+  zh["edu.title"]="给教师和辅导员的指南"; zh["edu.intro"]="使用适合13至15岁学生的虚构校园情境。引导五个步骤，并一起检查 AI 建议的年龄适切性、准确性和偏见。"; zh["about.title"]="关于项目和你的隐私"; zh["layout.learning.more"]="了解更多学习方法"; zh["layout.privacy.more"]="隐私、原型限制和资料流向"; zh["comic.title"]="一个冲突。一个新选择。"; zh["comic.lede"]="跟随 Amir 在 Aina 老师的指导下练习回应。";
   var api = { ms: ms, en: en, zh: zh, keys: keys };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.TBYS_I18N = api;
