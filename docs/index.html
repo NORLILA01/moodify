@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ms-MY" data-title-key="meta.title">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moodify: berlatih menulis mesej dengan hormat</title>
+<meta name="description" content="Alat latihan komunikasi untuk remaja Malaysia berumur 13–15 tahun: semak draf mesej, renungkan bagaimana ia mungkin diterima, dan tulis semula dengan perkataan anda sendiri." data-i18n-attr="content:meta.desc">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/moodify.css?v=20261021-5">
+</head>
+<body class="moodify-home">
+<a class="skip-link" href="#try" data-i18n="skip"></a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#top"><img class="moodify-logo" src="assets/images/moodify-logo.png" alt="Moodify"><img class="utm-logo" src="assets/images/utm-logo.jpg" alt="Universiti Teknologi Malaysia"></a>
+    <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.group" aria-label="Bahasa / Language">
+      <button type="button" class="lang-btn" data-set-lang="ms" lang="ms" aria-label="Bahasa Melayu" aria-pressed="true"><span aria-hidden="true">BM</span></button>
+      <button type="button" class="lang-btn" data-set-lang="en" lang="en" aria-label="English" aria-pressed="false"><span aria-hidden="true">EN</span></button>
+    </div>
+    <nav class="site-nav" data-i18n-attr="aria-label:nav.aria" aria-label="Menu utama">
+      <ul>
+        <li><a href="#try" data-i18n="nav.try"></a></li>
+        <li><a href="#how" data-i18n="nav.how"></a></li>
+        <li><a href="#educators" data-i18n="nav.educators"></a></li>
+        <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="comic/" data-i18n="nav.comic"></a></li>
+        <li><a href="presentation/" data-i18n="nav.slides"></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="project-intro" aria-labelledby="project-intro-title">
+  <div class="project-intro__inner">
+    <div class="project-intro__logos"><img src="assets/images/moodify-logo.png" alt="Moodify"><span aria-hidden="true"></span><img src="assets/images/utm-logo.jpg" alt="Universiti Teknologi Malaysia"></div>
+    <div class="project-intro__copy">
+      <p class="project-intro__kicker">NALI 2026 · REKA BENTUK PEDAGOGI</p>
+      <h1 id="project-intro-title">BOUNDED HYBRID AI PEDAGOGY TO ENHANCE EMOTIONAL INTELLIGENCE AND REDUCE AGGRESSION IN MALAYSIAN ADOLESCENTS</h1>
+      <p>Latihan komunikasi berstruktur untuk remaja Malaysia berumur 13–15 tahun, dengan bimbingan guru.</p>
+    </div>
+  </div>
+</section>
+<p class="visually-hidden" id="lang-live" role="status"></p>
+<noscript><p class="noscript">Laman ini memerlukan JavaScript untuk penyemak dan pertukaran bahasa. / This page needs JavaScript for the checker and language switch.</p></noscript>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+        <h1 id="hero-title"><span data-i18n="hero.h1a"></span> <span class="accent" data-i18n="hero.h1b"></span></h1>
+        <p class="hero__lede" data-i18n="hero.lede"></p>
+        <div class="hero__actions">
+          <a class="btn" href="#try" id="cta-try" data-i18n="hero.cta.try"></a>
+          <a class="btn btn--secondary" href="#how" data-i18n="hero.cta.how"></a>
+        </div>
+        <p class="hero__context" data-i18n="hero.context"></p>
+      </div>
+
+      <figure class="exchange" aria-labelledby="exchange-cap">
+        <div class="exchange__stack">
+          <div class="msg msg--draft fade" id="ex-draft-box">
+            <span class="msg__label" data-i18n="exchange.draftLabel"></span>
+            <p id="ex-draft" data-i18n="hero.ex0.draft"></p>
+          </div>
+          <div class="pause" aria-hidden="true">
+            <span class="pause__icon"><i></i><i></i></span>
+            <span class="pause__text" data-i18n="exchange.pause"></span>
+          </div>
+          <div class="msg msg--revision fade" id="ex-rev-box">
+            <span class="msg__label" data-i18n="exchange.revLabel"></span>
+            <p id="ex-rev" data-i18n="hero.ex0.rev"></p>
+          </div>
+        </div>
+        <figcaption class="exchange__caption" id="exchange-cap">
+          <p data-i18n="exchange.caption"></p>
+          <button type="button" class="btn btn--quiet" id="ex-toggle" data-i18n="exchange.toggle"></button>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--surface" id="try" aria-labelledby="try-title">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="try-title" data-i18n="try.title"></h2>
+        <p data-i18n="try.intro"></p>
+      </div>
+
+      <div class="workspace">
+        <p class="panel panel--info lang-notice" id="lang-notice" data-i18n="notice.lang"></p>
+
+        <h3 id="scenarios-title" data-i18n="scen.title"></h3>
+        <p class="field-hint" data-i18n="scen.hint"></p>
+        <ul class="scenario-list" aria-labelledby="scenarios-title">
+          <li><button type="button" class="scenario" data-text="You are such an idiot. You never do your part."><strong data-i18n="scen.1.label"></strong><span lang="en">You are such an idiot. You never do your part.</span><small class="gloss" data-i18n="scen.1.gloss" data-i18n-hide-empty></small></button></li>
+          <li><button type="button" class="scenario" data-text="I disagree with this approach. Could we compare the evidence before deciding?"><strong data-i18n="scen.2.label"></strong><span lang="en">I disagree with this approach. Could we compare the evidence before deciding?</span><small class="gloss" data-i18n="scen.2.gloss" data-i18n-hide-empty></small></button></li>
+          <li><button type="button" class="scenario" data-text="Shut up, loser. Your ideas are worthless."><strong data-i18n="scen.3.label"></strong><span lang="en">Shut up, loser. Your ideas are worthless.</span><small class="gloss" data-i18n="scen.3.gloss" data-i18n-hide-empty></small></button></li>
+        </ul>
+        <p class="field-hint" data-i18n="scen.note"></p>
+
+        <label class="field-label" for="draft" data-i18n="draft.label"></label>
+        <p class="field-hint" id="draft-hint" data-i18n="draft.hint"></p>
+        <textarea id="draft" maxlength="500" rows="5" lang="en" aria-describedby="draft-hint lang-notice count draft-error" data-i18n-attr="placeholder:draft.placeholder"></textarea>
+        <p class="field-error" id="draft-error" hidden></p>
+        <div class="field-row">
+          <span class="counter" id="count">0 / 500</span>
+          <button type="button" class="btn" id="check" disabled data-i18n="check.btn"></button>
+        </div>
+        <p class="status" id="status" role="status"></p>
+        <p class="privacy-line" data-i18n="privacy.line"></p>
+
+        <div class="result" id="result"></div>
+
+        <div class="reflect" id="reflect" hidden>
+          <h3 data-i18n="reflect.title"></h3>
+          <label class="field-label" for="reflection" data-i18n="reflect.label"></label>
+          <p class="field-hint" data-i18n="reflect.hint"></p>
+          <textarea id="reflection" rows="3" maxlength="1000"></textarea>
+          <div class="btn-row">
+            <button type="button" class="btn btn--secondary" id="write-revision" data-i18n="reflect.writeRev"></button>
+            <button type="button" class="btn btn--quiet" id="reset" data-i18n="reflect.reset"></button>
+          </div>
+
+          <div id="revision-wrap" hidden>
+            <label class="field-label" for="revision" style="margin-top:1.25rem" data-i18n="rev.label"></label>
+            <p class="field-hint" id="revision-hint" data-i18n="rev.hint"></p>
+            <textarea id="revision" maxlength="500" rows="4" lang="en" aria-describedby="revision-hint revision-count revision-error"></textarea>
+            <p class="field-error" id="revision-error" hidden></p>
+            <div class="field-row">
+              <span class="counter" id="revision-count">0 / 500</span>
+              <button type="button" class="btn" id="check-revision" data-i18n="rev.check"></button>
+            </div>
+            <div class="result" id="revision-result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="comic-entry section" aria-labelledby="comic-entry-title">
+    <div class="container comic-entry__grid">
+      <a href="comic/" tabindex="-1" aria-hidden="true"><img src="assets/images/moodify-comic.svg" alt="" width="1080" height="1080" loading="lazy"></a>
+      <div><p class="eyebrow" data-i18n="nav.comic"></p><h2 id="comic-entry-title" data-i18n="comic.title"></h2><p data-i18n="comic.lede"></p><a class="btn" href="comic/" data-i18n="comic.open"></a></div>
+    </div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="how-title" data-i18n="how.title"></h2>
+        <p data-i18n="how.intro"></p>
+      </div>
+
+
+
+
+
+      <ol class="steps">
+        <li><h3 data-i18n="step.1.t"></h3><p data-i18n="step.1.d"></p></li>
+        <li><h3 data-i18n="step.2.t"></h3><p data-i18n="step.2.d"></p></li>
+        <li><h3 data-i18n="step.3.t"></h3><p data-i18n="step.3.d"></p></li>
+        <li><h3 data-i18n="step.4.t"></h3><p data-i18n="step.4.d"></p></li>
+        <li><h3 data-i18n="step.5.t"></h3><p data-i18n="step.5.d"></p></li>
+      </ol>
+
+      <details class="read-more"><summary data-i18n="layout.learning.more"></summary>
+      <p class="diagram-caption text-equivalent" data-i18n="how.caption"></p>
+
+      <h3 style="margin-top:2.5rem" data-i18n="skills.title"></h3>
+      <ul class="skills">
+        <li data-i18n="skill.1"></li>
+        <li data-i18n="skill.2"></li>
+        <li data-i18n="skill.3"></li>
+        <li data-i18n="skill.4"></li>
+        <li data-i18n="skill.5"></li>
+      </ul>
+      <p class="text-equivalent" style="margin-top:1rem" data-i18n="skills.note"></p>
+
+      </details>
+      <details class="read-more"><summary data-i18n="example.title"></summary>
+      <h3 style="margin-top:2.5rem" data-i18n="example.title"></h3>
+      <p data-i18n="example.intro"></p>
+      <div class="example">
+        <div class="example__box">
+          <p class="example__label" data-i18n="example.draftLabel"></p>
+          <p class="example__quote" lang="en">&ldquo;You are such an idiot. You never do your part.&rdquo;</p>
+          <p class="gloss gloss--block" data-i18n="example.draftGloss" data-i18n-hide-empty></p>
+          <p style="margin:0" data-i18n="example.draftNote"></p>
+        </div>
+        <div class="example__box example__box--rev">
+          <p class="example__label" data-i18n="example.revLabel"></p>
+          <p class="example__quote" lang="en">&ldquo;<mark>I'm frustrated<sup>A</sup></mark> that <mark>the slides aren't ready<sup>B</sup></mark> because our deadline is tomorrow. <mark>Can you send your section by 6 pm, or tell us what help you need?<sup>C</sup></mark>&rdquo;</p>
+          <p class="gloss gloss--block" data-i18n="example.revGloss" data-i18n-hide-empty></p>
+          <ol class="notes" type="A">
+            <li data-i18n="example.note.a"></li>
+            <li data-i18n="example.note.b"></li>
+            <li data-i18n="example.note.c"></li>
+          </ol>
+        </div>
+      </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="section section--surface" id="educators" aria-labelledby="edu-title">
+    <div class="container two-col">
+      <div>
+        <h2 id="edu-title" data-i18n="edu.title"></h2>
+        <p data-i18n="edu.p1"></p>
+        <p data-i18n="edu.p2"></p>
+        <details class="read-more"><summary data-i18n="edu.prompts"></summary>
+        <h3 data-i18n="edu.prompts"></h3>
+        <ul class="limits">
+          <li data-i18n="edu.q1"></li>
+          <li data-i18n="edu.q2"></li>
+          <li data-i18n="edu.q3"></li>
+          <li data-i18n="edu.q4"></li>
+        </ul>
+        </details>
+      </div>
+      <div>
+        <h3 data-i18n="act.title"></h3>
+        <ol class="activity">
+          <li><b>2 <span data-i18n="act.min"></span></b><span data-i18n="act.1"></span></li>
+          <li><b>3 <span data-i18n="act.min"></span></b><span data-i18n="act.2"></span></li>
+          <li><b>3 <span data-i18n="act.min"></span></b><span data-i18n="act.3"></span></li>
+          <li><b>2 <span data-i18n="act.min"></span></b><span data-i18n="act.4"></span></li>
+        </ol>
+        <p class="text-equivalent" data-i18n="act.note"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="evidence" aria-labelledby="evidence-title" hidden style="display: none;">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="evidence-title" data-i18n="evid.title"></h2>
+        <p data-i18n="evid.intro"></p>
+      </div>
+      <div class="two-col">
+        <div>
+          <div class="table-wrap">
+            <table>
+              <caption data-i18n="evid.caption"></caption>
+              <tbody>
+                <tr><th scope="row" data-i18n="evid.r1"></th><td>97,320</td></tr>
+                <tr><th scope="row" data-i18n="evid.r2"></th><td>0.60</td></tr>
+                <tr><th scope="row" data-i18n="evid.r3"></th><td>0.53</td></tr>
+                <tr><th scope="row" data-i18n="evid.r4"></th><td data-i18n="evid.r4v"></td></tr>
+                <tr><th scope="row" data-i18n="evid.r5"></th><td data-i18n="evid.r5v"></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-equivalent" style="margin-top:.75rem" data-i18n="evid.explain"></p>
+          <details>
+            <summary data-i18n="evid.tech.summary"></summary>
+            <p class="text-equivalent" data-i18n="evid.tech.body"></p>
+          </details>
+        </div>
+        <div>
+          <div class="not-measured">
+            <h3 data-i18n="evid.nm.title"></h3>
+            <p data-i18n="evid.nm.body"></p>
+          </div>
+          <h3 style="margin-top:1.5rem" data-i18n="limits.title"></h3>
+          <ul class="limits">
+            <li data-i18n="limit.1"></li>
+            <li data-i18n="limit.2"></li>
+            <li data-i18n="limit.3"></li>
+            <li data-i18n="limit.4"></li>
+            <li data-i18n="limit.5"></li>
+            <li data-i18n="limit.6"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="about-title" data-i18n="about.title"></h2>
+        <p data-i18n="about.intro"></p>
+      </div>
+
+      <p data-i18n="layout.limits"></p>
+      <p class="privacy-summary" data-i18n="layout.privacy.short"></p>
+      <details class="read-more"><summary data-i18n="layout.privacy.more"></summary>
+      <h3 data-i18n="about.flow"></h3>
+      <figure class="diagram diagram--wide" data-lang-block="ms">
+        <!-- diagram:system-architecture.ms.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" lang="ms-MY" aria-labelledby="sa-ms-t sa-ms-d" font-family='Manrope, "Avenir Next", "Segoe UI", system-ui, -apple-system, Arial, sans-serif'>
+<title id="sa-ms-t">Seni bina sistem semasa dan sempadan data</title>
+<desc id="sa-ms-d">GitHub Pages menghantar laman web, detector.js dan model.json ke pelayar pelajar; muat turun ini bukan muat naik draf. Dalam pelayar, draf bahasa Inggeris sehingga 500 aksara disemak secara setempat oleh pengelas TF-IDF dan regresi logistik, yang menghasilkan maklum balas dan petua setempat. Hanya jika pelajar meminta bimbingan bagi draf yang ditandakan, draf yang disemak dan kategorinya dihantar ke Cloudflare Worker, yang mengesahkan permintaan dan merahsiakan kunci API, kemudian memanggil OpenRouter dan penyedia model bahasa yang dikonfigurasikan. Cadangan kembali ke pelayar dan pelajar menulis versi baharunya sendiri, dengan semakan semula setempat yang dipilih.</desc>
+<defs>
+<marker id="sa-ms-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#152B46"/></marker>
+<marker id="sa-ms-ms" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#152B46"/></marker>
+</defs>
+<rect x="24" y="14" width="440" height="84" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="244" y="51.75" text-anchor="middle" font-size="24" font-weight="800" fill="#152B46"><tspan x="244" dy="0">GitHub Pages</tspan></text><text x="244" y="83.75" text-anchor="middle" font-size="18" font-weight="500" fill="#3B4F68"><tspan x="244" dy="0">Laman web, detector.js, model.json</tspan></text><path d="M244 98 V142" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)"/><text x="256" y="128" text-anchor="start" font-size="16" font-weight="600" fill="#3B4F68"><tspan x="256" dy="0">Fail statik dimuat turun; bukan muat naik draf</tspan></text><rect x="24" y="146" width="600" height="468" rx="18" fill="#E6F4EE" stroke="#0B6B63" stroke-width="2.5" stroke-dasharray="10 7"/><text x="44" y="178" text-anchor="start" font-size="19" font-weight="800" fill="#0B6B63"><tspan x="44" dy="0">Pelayar pelajar: pemprosesan setempat</tspan></text><rect x="44" y="200" width="170" height="96" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="129" y="231.25" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="129" dy="0">Draf bahasa</tspan><tspan x="129" dy="23.75">Inggeris</tspan></text><text x="129" y="280.75" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="129" dy="0">Hingga 500 aksara</tspan></text><rect x="244" y="200" width="190" height="96" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="339" y="221.25" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="339" dy="0">Pengelas</tspan><tspan x="339" dy="23.75">setempat</tspan></text><text x="339" y="270.75" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="339" dy="0">TF-IDF +</tspan><tspan x="339" dy="20">regresi logistik</tspan></text><rect x="464" y="200" width="140" height="96" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="534" y="233.125" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="534" dy="0">Maklum balas</tspan></text><text x="534" y="258.875" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="534" dy="0">dan petua</tspan><tspan x="534" dy="20">setempat</tspan></text><path d="M214 248 H240" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)"/><path d="M434 248 H460" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)"/><rect x="332" y="350" width="272" height="96" rx="14" fill="#FFFFFF" stroke="#294BCC" stroke-width="2.5"/><text x="468" y="383.125" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="468" dy="0">Minta bimbingan?</tspan></text><text x="468" y="408.875" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="468" dy="0">Pelajar memilih, hanya</tspan><tspan x="468" dy="20">untuk draf ditandakan</tspan></text><path d="M534 296 V346" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)"/><rect x="44" y="496" width="306" height="98" rx="14" fill="#FFFFFF" stroke="#0B6B63" stroke-width="2.5"/><text x="197" y="539.5" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="197" dy="0">Semak cadangan</tspan></text><text x="197" y="565.25" text-anchor="middle" font-size="17" font-weight="500" fill="#3B4F68"><tspan x="197" dy="0">Tulis versi anda sendiri</tspan></text><path d="M352 446 L290 492" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)"/><text x="116" y="470" text-anchor="start" font-size="16" font-weight="600" fill="#3B4F68"><tspan x="116" dy="0">Tiada permintaan luar</tspan></text><path d="M104 496 V330 H339 V300" fill="none" stroke="#152B46" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sa-ms-m)"/><text x="44" y="322" text-anchor="start" font-size="14" font-weight="600" fill="#3B4F68"><tspan x="44" dy="0">Semakan semula setempat (pilihan)</tspan></text><rect x="830" y="146" width="346" height="468" rx="18" fill="#EAF0FD" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="10 7"/><text x="1003" y="178" text-anchor="middle" font-size="18" font-weight="800" fill="#294BCC"><tspan x="1003" dy="0">Perkhidmatan luar:</tspan><tspan x="1003" dy="22.5">hanya untuk bimbingan yang diminta</tspan></text><rect x="850" y="236" width="306" height="108" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="1003" y="275.125" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="1003" dy="0">Cloudflare Worker</tspan></text><text x="1003" y="300.875" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="1003" dy="0">Mengesahkan permintaan;</tspan><tspan x="1003" dy="20">merahsiakan kunci API</tspan></text><rect x="850" y="384" width="306" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="1003" y="426.125" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="1003" dy="0">OpenRouter</tspan></text><rect x="850" y="494" width="306" height="100" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="1003" y="538.75" text-anchor="middle" font-size="18" font-weight="800" fill="#152B46"><tspan x="1003" dy="0">Penyedia model bahasa</tspan></text><text x="1003" y="563.25" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="1003" dy="0">Model yang dikonfigurasikan</tspan></text><path d="M1003 344 V380" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)" marker-start="url(#sa-ms-ms)"/><path d="M1003 454 V490" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-ms-m)" marker-start="url(#sa-ms-ms)"/><path d="M604 398 H700 V286 H846" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sa-ms-m)"/><text x="708" y="224" text-anchor="start" font-size="16" font-weight="700" fill="#294BCC"><tspan x="708" dy="0">Ya: draf</tspan><tspan x="708" dy="20">disemak dan</tspan><tspan x="708" dy="20">kategorinya</tspan></text><path d="M850 332 H780 V545 H354" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sa-ms-m)"/><text x="372" y="570" text-anchor="start" font-size="16" font-weight="700" fill="#294BCC"><tspan x="372" dy="0">Cadangan kembali:</tspan><tspan x="372" dy="20">perasaan atau keperluan,</tspan><tspan x="372" dy="20">kesan, petua, pembuka ayat</tspan></text>
+</svg>
+<!-- /diagram:system-architecture.ms.svg -->
+      </figure>
+      <figure class="diagram diagram--wide" data-lang-block="en">
+        <!-- diagram:system-architecture.en.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" lang="en" aria-labelledby="sa-en-t sa-en-d" font-family='Manrope, "Avenir Next", "Segoe UI", system-ui, -apple-system, Arial, sans-serif'>
+<title id="sa-en-t">Current system architecture and data boundaries</title>
+<desc id="sa-en-d">GitHub Pages serves the website, detector.js and model.json to the student's browser; these downloads are not a draft upload. Inside the browser, an English draft up to 500 characters is checked locally by a TF-IDF and logistic regression classifier, which produces feedback and local tips. Only if the student requests coaching for a flagged draft is the checked draft and its band sent to a Cloudflare Worker, which validates the request and keeps the API key secret, then calls OpenRouter and the configured language-model provider. Suggestions return to the browser and the student writes their own revision, with an optional local recheck.</desc>
+<defs>
+<marker id="sa-en-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#152B46"/></marker>
+<marker id="sa-en-ms" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#152B46"/></marker>
+</defs>
+<rect x="24" y="14" width="440" height="84" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="244" y="51.75" text-anchor="middle" font-size="24" font-weight="800" fill="#152B46"><tspan x="244" dy="0">GitHub Pages</tspan></text><text x="244" y="83.75" text-anchor="middle" font-size="18" font-weight="500" fill="#3B4F68"><tspan x="244" dy="0">Website, detector.js, model.json</tspan></text><path d="M244 98 V142" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)"/><text x="256" y="128" text-anchor="start" font-size="16" font-weight="600" fill="#3B4F68"><tspan x="256" dy="0">Static files downloaded; not a draft upload</tspan></text><rect x="24" y="146" width="600" height="468" rx="18" fill="#E6F4EE" stroke="#0B6B63" stroke-width="2.5" stroke-dasharray="10 7"/><text x="44" y="178" text-anchor="start" font-size="19" font-weight="800" fill="#0B6B63"><tspan x="44" dy="0">Student's browser: local processing</tspan></text><rect x="44" y="200" width="170" height="96" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="129" y="233.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="129" dy="0">English draft</tspan></text><text x="129" y="262.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="129" dy="0">Up to 500</tspan><tspan x="129" dy="20">characters</tspan></text><rect x="244" y="200" width="190" height="96" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="339" y="233.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="339" dy="0">Local classifier</tspan></text><text x="339" y="262.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="339" dy="0">TF-IDF +</tspan><tspan x="339" dy="20">logistic regression</tspan></text><rect x="464" y="200" width="140" height="96" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="534" y="243.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="534" dy="0">Feedback</tspan></text><text x="534" y="272.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="534" dy="0">and local tips</tspan></text><path d="M214 248 H240" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)"/><path d="M434 248 H460" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)"/><rect x="332" y="350" width="272" height="96" rx="14" fill="#FFFFFF" stroke="#294BCC" stroke-width="2.5"/><text x="468" y="383.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="468" dy="0">Coaching request?</tspan></text><text x="468" y="412.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="468" dy="0">Student chooses, for a</tspan><tspan x="468" dy="20">flagged draft only</tspan></text><path d="M534 296 V346" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)"/><rect x="44" y="496" width="306" height="98" rx="14" fill="#FFFFFF" stroke="#0B6B63" stroke-width="2.5"/><text x="197" y="540.25" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="197" dy="0">Review suggestions</tspan></text><text x="197" y="568.5" text-anchor="middle" font-size="17" font-weight="500" fill="#3B4F68"><tspan x="197" dy="0">Write your own revision</tspan></text><path d="M352 446 L290 492" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)"/><text x="116" y="470" text-anchor="start" font-size="16" font-weight="600" fill="#3B4F68"><tspan x="116" dy="0">No external request</tspan></text><path d="M104 496 V330 H339 V300" fill="none" stroke="#152B46" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sa-en-m)"/><text x="44" y="322" text-anchor="start" font-size="14" font-weight="600" fill="#3B4F68"><tspan x="44" dy="0">Optional local recheck</tspan></text><rect x="830" y="146" width="346" height="468" rx="18" fill="#EAF0FD" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="10 7"/><text x="1003" y="178" text-anchor="middle" font-size="18" font-weight="800" fill="#294BCC"><tspan x="1003" dy="0">External services:</tspan><tspan x="1003" dy="22.5">only for requested coaching</tspan></text><rect x="850" y="236" width="306" height="108" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="1003" y="275.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="1003" dy="0">Cloudflare Worker</tspan></text><text x="1003" y="304.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="1003" dy="0">Validates request;</tspan><tspan x="1003" dy="20">keeps API key secret</tspan></text><rect x="850" y="384" width="306" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="1003" y="426.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="1003" dy="0">OpenRouter</tspan></text><rect x="850" y="494" width="306" height="100" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="1003" y="539.5" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="1003" dy="0">Language-model provider</tspan></text><text x="1003" y="566.5" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="1003" dy="0">Configured model</tspan></text><path d="M1003 344 V380" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)" marker-start="url(#sa-en-ms)"/><path d="M1003 454 V490" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sa-en-m)" marker-start="url(#sa-en-ms)"/><path d="M604 398 H700 V286 H846" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sa-en-m)"/><text x="708" y="224" text-anchor="start" font-size="16" font-weight="700" fill="#294BCC"><tspan x="708" dy="0">Yes: checked draft</tspan><tspan x="708" dy="20">and its band</tspan></text><path d="M850 332 H780 V545 H354" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sa-en-m)"/><text x="372" y="570" text-anchor="start" font-size="16" font-weight="700" fill="#294BCC"><tspan x="372" dy="0">Suggestions return:</tspan><tspan x="372" dy="20">feeling or need, impact,</tspan><tspan x="372" dy="20">tip, sentence starter</tspan></text>
+</svg>
+<!-- /diagram:system-architecture.en.svg -->
+      </figure>
+      <figure class="diagram diagram--tall" data-lang-block="ms">
+        <!-- diagram:system-architecture-mobile.ms.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1130" role="img" lang="ms-MY" aria-labelledby="sam-ms-t sam-ms-d" font-family='Manrope, "Avenir Next", "Segoe UI", system-ui, -apple-system, Arial, sans-serif'>
+<title id="sam-ms-t">Seni bina sistem semasa dan sempadan data</title>
+<desc id="sam-ms-d">GitHub Pages menghantar laman web, detector.js dan model.json ke pelayar pelajar; muat turun ini bukan muat naik draf. Dalam pelayar, draf bahasa Inggeris sehingga 500 aksara disemak secara setempat oleh pengelas TF-IDF dan regresi logistik, yang menghasilkan maklum balas dan petua setempat. Hanya jika pelajar meminta bimbingan bagi draf yang ditandakan, draf yang disemak dan kategorinya dihantar ke Cloudflare Worker, yang mengesahkan permintaan dan merahsiakan kunci API, kemudian memanggil OpenRouter dan penyedia model bahasa yang dikonfigurasikan. Cadangan kembali ke pelayar dan pelajar menulis versi baharunya sendiri, dengan semakan semula setempat yang dipilih.</desc>
+<defs>
+<marker id="sam-ms-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#152B46"/></marker>
+<marker id="sam-ms-ms" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#152B46"/></marker>
+</defs>
+<rect x="30" y="14" width="360" height="78" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="48.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="210" dy="0">GitHub Pages</tspan></text><text x="210" y="77.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Laman web, detector.js, model.json</tspan></text><path d="M210 92 V132" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-ms-m)"/><text x="220" y="118" text-anchor="start" font-size="14" font-weight="600" fill="#3B4F68"><tspan x="220" dy="0">Fail statik, bukan draf</tspan></text><rect x="14" y="136" width="392" height="470" rx="16" fill="#E6F4EE" stroke="#0B6B63" stroke-width="2.5" stroke-dasharray="10 7"/><text x="30" y="166" text-anchor="start" font-size="16" font-weight="800" fill="#0B6B63"><tspan x="30" dy="0">Pelayar pelajar: pemprosesan setempat</tspan></text><rect x="40" y="184" width="340" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="215.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Draf bahasa Inggeris</tspan></text><text x="210" y="242.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Hingga 500 aksara</tspan></text><path d="M210 254 V286" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-ms-m)"/><rect x="40" y="290" width="340" height="80" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="326.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Pengelas setempat</tspan></text><text x="210" y="353.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">TF-IDF + regresi logistik</tspan></text><path d="M210 370 V402" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-ms-m)"/><rect x="40" y="406" width="340" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="447.375" text-anchor="middle" font-size="17" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Maklum balas dan petua setempat</tspan></text><path d="M210 476 V506" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-ms-m)"/><rect x="40" y="510" width="340" height="80" rx="14" fill="#FFFFFF" stroke="#294BCC" stroke-width="2.5"/><text x="210" y="546.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Minta bimbingan?</tspan></text><text x="210" y="573.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Pelajar memilih, draf ditandakan sahaja</tspan></text><path d="M210 590 V640" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sam-ms-m)"/><text x="222" y="622" text-anchor="start" font-size="14" font-weight="700" fill="#294BCC"><tspan x="222" dy="0">Ya: draf disemak + kategori</tspan></text><rect x="14" y="644" width="392" height="338" rx="16" fill="#EAF0FD" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="10 7"/><text x="30" y="668" text-anchor="start" font-size="14" font-weight="800" fill="#294BCC"><tspan x="30" dy="0">Perkhidmatan luar:</tspan><tspan x="30" dy="17.5">hanya untuk bimbingan yang diminta</tspan></text><rect x="40" y="698" width="340" height="80" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="734.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Cloudflare Worker</tspan></text><text x="210" y="761.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Mengesahkan; merahsiakan kunci API</tspan></text><path d="M210 778 V806" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-ms-m)" marker-start="url(#sam-ms-ms)"/><rect x="40" y="810" width="340" height="56" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="845.5" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">OpenRouter</tspan></text><path d="M210 866 V892" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-ms-m)" marker-start="url(#sam-ms-ms)"/><rect x="40" y="896" width="340" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="926.75" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Penyedia model bahasa</tspan></text><text x="210" y="952.5" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Model yang dikonfigurasikan</tspan></text><path d="M210 982 V1020" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sam-ms-m)"/><text x="222" y="1008" text-anchor="start" font-size="14" font-weight="700" fill="#294BCC"><tspan x="222" dy="0">Cadangan kembali</tspan></text><rect x="30" y="1024" width="360" height="84" rx="14" fill="#FFFFFF" stroke="#0B6B63" stroke-width="2.5"/><text x="210" y="1062.75" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Semak cadangan</tspan></text><text x="210" y="1089.75" text-anchor="middle" font-size="14" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Tulis versi anda; semakan semula setempat pilihan</tspan></text>
+</svg>
+<!-- /diagram:system-architecture-mobile.ms.svg -->
+      </figure>
+      <figure class="diagram diagram--tall" data-lang-block="en">
+        <!-- diagram:system-architecture-mobile.en.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1130" role="img" lang="en" aria-labelledby="sam-en-t sam-en-d" font-family='Manrope, "Avenir Next", "Segoe UI", system-ui, -apple-system, Arial, sans-serif'>
+<title id="sam-en-t">Current system architecture and data boundaries</title>
+<desc id="sam-en-d">GitHub Pages serves the website, detector.js and model.json to the student's browser; these downloads are not a draft upload. Inside the browser, an English draft up to 500 characters is checked locally by a TF-IDF and logistic regression classifier, which produces feedback and local tips. Only if the student requests coaching for a flagged draft is the checked draft and its band sent to a Cloudflare Worker, which validates the request and keeps the API key secret, then calls OpenRouter and the configured language-model provider. Suggestions return to the browser and the student writes their own revision, with an optional local recheck.</desc>
+<defs>
+<marker id="sam-en-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#152B46"/></marker>
+<marker id="sam-en-ms" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#152B46"/></marker>
+</defs>
+<rect x="30" y="14" width="360" height="78" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="48.875" text-anchor="middle" font-size="21" font-weight="800" fill="#152B46"><tspan x="210" dy="0">GitHub Pages</tspan></text><text x="210" y="77.125" text-anchor="middle" font-size="16" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Website, detector.js, model.json</tspan></text><path d="M210 92 V132" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-en-m)"/><text x="220" y="118" text-anchor="start" font-size="14" font-weight="600" fill="#3B4F68"><tspan x="220" dy="0">Static files; not a draft upload</tspan></text><rect x="14" y="136" width="392" height="470" rx="16" fill="#E6F4EE" stroke="#0B6B63" stroke-width="2.5" stroke-dasharray="10 7"/><text x="30" y="166" text-anchor="start" font-size="16" font-weight="800" fill="#0B6B63"><tspan x="30" dy="0">Student's browser: local processing</tspan></text><rect x="40" y="184" width="340" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="215.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">English draft</tspan></text><text x="210" y="242.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Up to 500 characters</tspan></text><path d="M210 254 V286" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-en-m)"/><rect x="40" y="290" width="340" height="80" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="326.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Local classifier</tspan></text><text x="210" y="353.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">TF-IDF + logistic regression</tspan></text><path d="M210 370 V402" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-en-m)"/><rect x="40" y="406" width="340" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="448.5" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Feedback and local tips</tspan></text><path d="M210 476 V506" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-en-m)"/><rect x="40" y="510" width="340" height="80" rx="14" fill="#FFFFFF" stroke="#294BCC" stroke-width="2.5"/><text x="210" y="546.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Coaching request?</tspan></text><text x="210" y="573.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Student chooses, flagged draft only</tspan></text><path d="M210 590 V640" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sam-en-m)"/><text x="222" y="622" text-anchor="start" font-size="14" font-weight="700" fill="#294BCC"><tspan x="222" dy="0">Yes: checked draft + band</tspan></text><rect x="14" y="644" width="392" height="338" rx="16" fill="#EAF0FD" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="10 7"/><text x="30" y="668" text-anchor="start" font-size="14" font-weight="800" fill="#294BCC"><tspan x="30" dy="0">External services:</tspan><tspan x="30" dy="17.5">only for requested coaching</tspan></text><rect x="40" y="698" width="340" height="80" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="734.125" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Cloudflare Worker</tspan></text><text x="210" y="761.125" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Validates; keeps API key secret</tspan></text><path d="M210 778 V806" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-en-m)" marker-start="url(#sam-en-ms)"/><rect x="40" y="810" width="340" height="56" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="845.5" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">OpenRouter</tspan></text><path d="M210 866 V892" fill="none" stroke="#152B46" stroke-width="2.5" marker-end="url(#sam-en-m)" marker-start="url(#sam-en-ms)"/><rect x="40" y="896" width="340" height="70" rx="14" fill="#FFFFFF" stroke="#152B46" stroke-width="2.5"/><text x="210" y="926.75" text-anchor="middle" font-size="19" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Language-model provider</tspan></text><text x="210" y="952.5" text-anchor="middle" font-size="15" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Configured model</tspan></text><path d="M210 982 V1020" fill="none" stroke="#294BCC" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#sam-en-m)"/><text x="222" y="1008" text-anchor="start" font-size="14" font-weight="700" fill="#294BCC"><tspan x="222" dy="0">Suggestions return</tspan></text><rect x="30" y="1024" width="360" height="84" rx="14" fill="#FFFFFF" stroke="#0B6B63" stroke-width="2.5"/><text x="210" y="1062.75" text-anchor="middle" font-size="20" font-weight="800" fill="#152B46"><tspan x="210" dy="0">Review suggestions</tspan></text><text x="210" y="1089.75" text-anchor="middle" font-size="14" font-weight="500" fill="#3B4F68"><tspan x="210" dy="0">Write your own revision; optional local recheck</tspan></text>
+</svg>
+<!-- /diagram:system-architecture-mobile.en.svg -->
+      </figure>
+      <div class="text-equivalent">
+        <p data-i18n="about.p1"></p>
+        <ol>
+          <li data-i18n="about.s1"></li>
+          <li data-i18n="about.s2"></li>
+          <li data-i18n="about.s3"></li>
+          <li data-i18n="about.s4"></li>
+          <li data-i18n="about.s5"></li>
+          <li data-i18n="about.s6"></li>
+        </ol>
+        <p data-i18n="about.p2"></p>
+        <p data-i18n="about.p3"></p>
+        <p data-i18n="about.p4"></p>
+      </div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p data-i18n="foot.line"></p>
+    <p><a href="https://github.com/drMurtadha/think-before-you-send" data-i18n="foot.source"></a> · <a href="https://utmcdex.utm.my/nali2026/" data-i18n="foot.nali"></a> · <a href="presentation/" data-i18n="foot.deck"></a></p>
+  </div>
+</footer>
+
+<script src="detector.js"></script>
+<script src="assets/js/i18n.js?v=20261021-4"></script>
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/palette.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
