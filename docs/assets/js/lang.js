@@ -15,7 +15,7 @@
   function stored() {
     try {
       var v = root.localStorage.getItem(KEY);
-      return v === "ms" || v === "en" ? v : null;
+      return v === "ms" || v === "en" || v === "zh" ? v : null;
     } catch (e) { memoryOnly = true; return null; }
   }
   function persist(v) {
@@ -62,7 +62,7 @@
       });
     }
     if (!scope) {
-      doc.documentElement.setAttribute("lang", current === "ms" ? "ms-MY" : "en");
+      doc.documentElement.setAttribute("lang", current === "ms" ? "ms-MY" : (current === "zh" ? "zh-CN" : "en"));
       var tk = doc.documentElement.getAttribute("data-title-key");
       if (tk) doc.title = t(tk);
       var btns = doc.querySelectorAll("[data-set-lang]");
@@ -73,7 +73,7 @@
   }
 
   function set(lang, opts) {
-    if (lang !== "ms" && lang !== "en") return;
+    if (lang !== "ms" && lang !== "en" && lang !== "zh") return;
     var changed = lang !== current;
     current = lang;
     persist(lang);
@@ -81,7 +81,7 @@
     if (changed) {
       listeners.forEach(function (fn) { try { fn(lang); } catch (e) { /* a listener must not break switching */ } });
       var live = doc.getElementById("lang-live");
-      if (live && !(opts && opts.silent)) live.textContent = t(lang === "ms" ? "status.lang.ms" : "status.lang.en");
+      if (live && !(opts && opts.silent)) live.textContent = t(lang === "ms" ? "status.lang.ms" : (lang === "zh" ? "status.lang.zh" : "status.lang.en"));
     }
   }
 
