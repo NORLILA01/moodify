@@ -200,3 +200,5 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 
 /* Keep complete researcher portraits visible in the homepage team cards. */
 .team-inline .team-photo{aspect-ratio:4/5!important;object-fit:contain!important;object-position:center top!important;background:#f6f6f6}
+
+.team-inline .team-photo{aspect-ratio:auto!important;height:auto!important;max-height:none!important;object-fit:initial!important;object-position:initial!important;background:transparent!important}
