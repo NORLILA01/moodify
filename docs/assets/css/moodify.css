@@ -196,3 +196,5 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 /* Slightly larger front-page Moodify and NALI logos in both languages. */
 .project-intro__logos img:first-child{width:min(48vw,310px)!important}.project-intro__logos img:last-child{width:min(39vw,260px)!important}
 @media(max-width:700px){.project-intro__logos img:first-child{width:min(52vw,245px)!important}.project-intro__logos img:last-child{width:min(42vw,195px)!important}}
+
+.about-privacy-art{float:right;width:min(34%,360px);height:auto;margin:0 0 1.25rem 2rem;display:block;object-fit:contain}.about-privacy-art+*{clear:both}@media(max-width:760px){.about-privacy-art{float:none;width:min(78vw,360px);margin:1rem auto;}}
