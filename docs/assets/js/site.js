@@ -398,3 +398,20 @@
   function render(){ var ms=document.documentElement.lang.indexOf('ms')===0; copy.innerHTML=(ms?bm:en)+steps; }
   render(); new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
+
+// Tidy the welcoming artwork placed before What Is Moodify.
+(function(){
+  function tidy(){
+    var section=document.querySelector('.what-is-moodify'); if(!section) return;
+    var prev=section.previousElementSibling;
+    if(prev && (prev.matches('img') || prev.querySelector && prev.querySelector('img'))){
+      prev.classList.add('welcoming-art-before');
+      var img=prev.matches('img')?prev:prev.querySelector('img');
+      if(img){img.style.display='block';img.style.width='min(70vw,720px)';img.style.maxWidth='720px';img.style.height='auto';img.style.margin='0 auto';img.style.background='transparent';}
+      prev.style.background='transparent'; prev.style.textAlign='center'; prev.style.margin='1rem auto';
+    }
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT), n;
+    while(n=walker.nextNode()){ if(n.nodeValue.trim()==='\\n') n.nodeValue=''; }
+  }
+  tidy();
+})();
