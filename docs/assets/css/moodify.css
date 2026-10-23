@@ -202,3 +202,5 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 .team-inline .team-photo{aspect-ratio:4/5!important;object-fit:contain!important;object-position:center top!important;background:#f6f6f6}
 
 .team-inline .team-photo{aspect-ratio:auto!important;height:auto!important;max-height:none!important;object-fit:initial!important;object-position:initial!important;background:transparent!important}
+
+.team-inline .team-grid .team-card img,.team-inline img.team-photo{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:fill!important;object-position:center top!important}
