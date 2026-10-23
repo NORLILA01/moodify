@@ -3,3 +3,6 @@
 .what-is-moodify__accessories img{content:url(assets/images/kanan-moodify.svg)!important;}
 
 .what-is-moodify__accessories img{content:url(../images/kanan-moodify.svg)!important;}
+
+/* Use the uploaded KANAN MOODIFY asset from docs/assets/images. */
+.what-is-moodify__accessories img{content:url(../images/KANAN%20MOODIFY.png)!important;}
