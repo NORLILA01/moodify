@@ -388,3 +388,13 @@
   updateCount(revision, revCount);
   loadModel();
 })();
+
+// Localised What Is Moodify copy.
+(function(){
+  var copy=document.querySelector('.what-is-moodify__copy'); if(!copy) return;
+  var en='<p class="eyebrow">WELCOME TO MOODIFY</p><h2>What Is Moodify?</h2><p class="what-is-moodify__subtitle">A Smarter Way to Understand Emotions and Change the Way We Respond.</p><p>The name <strong>Moodify</strong> combines <em>mood</em> and <em>modify</em>. Students may not always control what they feel, but they can learn to understand their emotions and modify how they respond.</p><p>Moodify does not simply tell students what to say. It provides a safe, supervised space to practise, reflect and make their own decisions.</p><p>Unlike ChatGPT or a conventional chatbot, Moodify is not designed to provide general answers. It is a bounded, psychology-based AI learning environment that guides adolescents aged 13–15 through five steps:</p>';
+  var bm='<p class="eyebrow">SELAMAT DATANG KE MOODIFY</p><h2>Apakah Moodify?</h2><p class="what-is-moodify__subtitle">Cara yang Lebih Bijak untuk Memahami Emosi dan Memilih Tindak Balas</p><p>Nama <strong>Moodify</strong> ialah gabungan perkataan <em>mood</em> yang bermaksud emosi dan <em>modify</em> yang bermaksud mengubah.</p><p>Kadangkala, kita tidak dapat memilih perasaan yang kita alami. Namun, kita boleh belajar untuk memahami perasaan tersebut dan memilih cara yang lebih baik untuk bertindak balas.</p><p>Moodify bukan sekadar memberitahu pelajar perkara yang perlu dikatakan. Moodify menyediakan ruang pembelajaran yang selamat dan diselia oleh guru untuk membantu pelajar berlatih, membuat refleksi dan membuat keputusan sendiri.</p><p>Berbeza daripada ChatGPT atau chatbot biasa, Moodify tidak memberikan jawapan umum. Moodify ialah <strong>persekitaran pembelajaran AI berasaskan psikologi</strong> yang membantu remaja berusia 13 hingga 15 tahun belajar melalui lima langkah:</p>';
+  var steps='<div class="moodify-process" aria-label="Moodify five-step process"><span>Write</span><b aria-hidden="true">→</b><span>Detect</span><b aria-hidden="true">→</b><span>Pause &amp; Identify</span><b aria-hidden="true">→</b><span>Compare</span><b aria-hidden="true">→</b><span>Evaluate &amp; Revise</span></div>';
+  function render(){ var ms=document.documentElement.lang.indexOf('ms')===0; copy.innerHTML=(ms?bm:en)+steps; }
+  render(); new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+})();
