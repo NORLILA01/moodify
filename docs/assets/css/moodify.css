@@ -188,3 +188,6 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 @media (max-width: 600px) { .palette-picker { right: .55rem; bottom: .75rem; } .palette-menu { bottom: 62px; } }
 @media (max-width: 600px) { .moodify-logo { height: 27px; max-width: 116px; } .utm-logo { height: 24px; max-width: 82px; padding-left: .35rem; } .brand { gap: .35rem; } }
 \n.project-intro__copy > p { max-width: 900px; margin: .65rem auto 0; color: var(--ink-soft); font-size: clamp(1rem, 1.4vw, 1.2rem); line-height: 1.55; }\n.project-intro__copy > p:last-child { font-weight: 700; color: var(--cobalt-dark); }\n
+html[lang="ms-MY"] .project-intro h1, html[lang="en"] .project-intro h1 { font-size: clamp(1.35rem, 2.5vw, 2.15rem); }
+html[lang="ms-MY"] .project-intro__copy > p, html[lang="en"] .project-intro__copy > p { font-size: clamp(1rem, 1.4vw, 1.2rem); }
+@media (max-width: 700px) { html[lang="ms-MY"] .project-intro h1, html[lang="en"] .project-intro h1 { font-size: 1rem; } }
