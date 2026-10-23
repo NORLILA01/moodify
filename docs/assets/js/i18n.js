@@ -346,7 +346,7 @@
     ["deck.s8.try", "Cuba Moodify", "Try Moodify"],
     ["deck.s8.foot", "Disediakan untuk penyertaan NALI 2026", "Prepared for NALI 2026 participation"],
     ["deck.s8.qrAlt", "Kod QR yang memaut ke https://drmurtadha.github.io/think-before-you-send/", "QR code linking to https://drmurtadha.github.io/think-before-you-send/"],
-    ["deck.slideLabel", "Slaid {n} daripada {total}: {title}", "Slide {n} of {total}: {title}"]
+    ["deck.slideLabel", "Slaid {n} daripada {total}: {title}", "Slide {n} of {total}: {title}"],
     ["intro.title", "Pedagogi Hibrid Kecerdasan Buatan (AI) Terkawal untuk Meningkatkan Kecerdasan Emosi dan Mengurangkan Tingkah Laku Agresif dalam Kalangan Remaja Malaysia", "Bounded Hybrid AI Pedagogy to Enhance Emotional Intelligence and Reduce Aggression in Malaysian Adolescents"],
     ["intro.body", "Suatu pengalaman pembelajaran berasaskan psikologi yang dilaksanakan melalui lima langkah secara terkawal dan di bawah penyeliaan guru dan pegawai Psikologi. Pendekatan ini membantu remaja mengenal pasti faktor pencetus tingkah laku agresif, memahami emosi diri serta mengamalkan respons yang konstruktif dalam menangani konflik harian melalui pedagogi yang disokong oleh kecerdasan buatan (AI).", "A psychology-based learning experience delivered through five controlled steps under the supervision of teachers and Psychology Officers. It helps adolescents identify triggers of aggressive behaviour, understand their emotions and practise constructive responses to everyday conflicts through AI-supported pedagogy."],
     ["intro.program", "Pendekatan ini selaras dengan Program Pembentukan Karakter Malaysia 2027.", "This approach aligns with the Malaysia Character Formation Programme 2027"],
