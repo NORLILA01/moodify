@@ -192,3 +192,7 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 
 /* Remove the standalone illustration above What Is Moodify. */
 .what-is-moodify__art{display:none!important;}
+
+/* Slightly larger front-page Moodify and NALI logos in both languages. */
+.project-intro__logos img:first-child{width:min(48vw,310px)!important}.project-intro__logos img:last-child{width:min(39vw,260px)!important}
+@media(max-width:700px){.project-intro__logos img:first-child{width:min(52vw,245px)!important}.project-intro__logos img:last-child{width:min(42vw,195px)!important}}
