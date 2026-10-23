@@ -415,3 +415,10 @@
   }
   tidy();
 })();
+
+// Add the About/privacy illustration beside the copy on wide screens.
+(function(){
+  var about=document.querySelector('#about .container'); if(!about || about.querySelector('.about-privacy-art')) return;
+  var art=document.createElement('img'); art.className='about-privacy-art'; art.src='assets/images/about-privacy-right.svg'; art.alt='Moodify privacy and supervised learning illustration';
+  about.appendChild(art);
+})();
