@@ -349,7 +349,7 @@
     ["deck.slideLabel", "Slaid {n} daripada {total}: {title}", "Slide {n} of {total}: {title}"]
   ];
 
-  var ms = {}, en = {}, keys = [];
+    ["intro.title", "Pedagogi Hibrid Kecerdasan Buatan (AI) Terkawal untuk Meningkatkan Kecerdasan Emosi dan Mengurangkan Tingkah Laku Agresif dalam Kalangan Remaja Malaysia", "Bounded Hybrid AI Pedagogy to Enhance Emotional Intelligence and Reduce Aggression in Malaysian Adolescents"],\n    ["intro.body", "Suatu pengalaman pembelajaran berasaskan psikologi yang dilaksanakan melalui lima langkah secara terkawal dan di bawah penyeliaan guru dan pegawai Psikologi. Pendekatan ini membantu remaja mengenal pasti faktor pencetus tingkah laku agresif, memahami emosi diri serta mengamalkan respons yang konstruktif dalam menangani konflik harian melalui pedagogi yang disokong oleh kecerdasan buatan (AI).", "A psychology-based learning experience delivered through five controlled steps under the supervision of teachers and Psychology Officers. It helps adolescents identify triggers of aggressive behaviour, understand their emotions and practise constructive responses to everyday conflicts through AI-supported pedagogy."],\n    ["intro.program", "Pendekatan ini selaras dengan Program Pembentukan Karakter Malaysia 2027.", "This approach aligns with the Malaysia Character Formation Programme 2027."],\n\n  var ms = {}, en = {}, keys = [];
   E.forEach(function (e) {
     if (ms.hasOwnProperty(e[0])) throw new Error("duplicate i18n key: " + e[0]);
     ms[e[0]] = e[1]; en[e[0]] = e[2]; keys.push(e[0]);
