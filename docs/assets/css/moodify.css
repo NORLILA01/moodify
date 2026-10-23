@@ -83,12 +83,12 @@
 .project-intro { padding: clamp(1.8rem, 4vw, 3.2rem) 1.5rem; background: var(--paper); border-bottom: 1px solid var(--border); }
 .project-intro__inner { width: min(1120px, 100%); margin: 0 auto; display: grid; justify-items: center; gap: 1.25rem; text-align: center; }
 .project-intro__logos { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); }
-.project-intro__logos img:first-child { display: block; width: min(42vw, 260px); height: auto; }
-.project-intro__logos img:last-child { display: block; width: min(34vw, 220px); height: auto; }
+.project-intro__logos img:first-child { display: block; width: min(46vw, 360px); height: auto; }
+.project-intro__logos img:last-child { display: block; width: min(38vw, 300px); height: auto; }
 .project-intro__logos span { height: 58px; border-left: 2px solid var(--border-strong); }
 .project-intro__copy { max-width: 880px; }
 .project-intro__kicker { margin: 0 0 .8rem; color: var(--cobalt-dark); font-size: .78rem; font-weight: 800; letter-spacing: .16em; }
-.project-intro h1 { margin: 0 0 .7rem; color: var(--ink); font-size: clamp(1.05rem, 2vw, 1.7rem); line-height: 1.18; letter-spacing: .01em; }
+.project-intro h1 { margin: 0 0 .7rem; color: var(--ink); font-size: clamp(1.35rem, 2.5vw, 2.15rem); line-height: 1.18; letter-spacing: .01em; }
 .project-intro__copy > p:last-child { margin: 0; color: var(--ink-soft); font-size: clamp(1rem, 1.6vw, 1.2rem); }
 @media (max-width: 700px) { .project-intro { padding: 1.5rem 1rem; } .project-intro__inner { gap: .9rem; } .project-intro__logos { gap: .7rem; } .project-intro__logos img:first-child { width: min(46vw, 210px); } .project-intro__logos img:last-child { width: min(36vw, 170px); } .project-intro__logos span { height: 40px; } .project-intro__kicker { font-size: .68rem; } .project-intro h1 { font-size: 1rem; } }
 .moodify-home .hero { background: radial-gradient(ellipse at 8% 10%, #e5f5ef 0, transparent 52%), #f7f8fc; padding-block: clamp(2.5rem, 6vw, 5rem); }
@@ -187,3 +187,4 @@ html[data-palette="b"] .comic-page { background: #F6FBFF; }
 html[data-palette="c"] .comic-page { background: #FFF9FF; }
 @media (max-width: 600px) { .palette-picker { right: .55rem; bottom: .75rem; } .palette-menu { bottom: 62px; } }
 @media (max-width: 600px) { .moodify-logo { height: 27px; max-width: 116px; } .utm-logo { height: 24px; max-width: 82px; padding-left: .35rem; } .brand { gap: .35rem; } }
+\n.project-intro__copy > p { max-width: 900px; margin: .65rem auto 0; color: var(--ink-soft); font-size: clamp(1rem, 1.4vw, 1.2rem); line-height: 1.55; }\n.project-intro__copy > p:last-child { font-weight: 700; color: var(--cobalt-dark); }\n
