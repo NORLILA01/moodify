@@ -416,3 +416,5 @@
   tidy();
 })();
 
+
+(function(){function uncrop(){document.querySelectorAll('.team-inline .team-photo').forEach(function(img){img.style.setProperty('aspect-ratio','auto','important');img.style.setProperty('height','auto','important');img.style.setProperty('max-height','none','important');img.style.setProperty('object-fit','contain','important');img.style.setProperty('object-position','center top','important');});} if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',uncrop); else uncrop();})();
