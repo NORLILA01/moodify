@@ -191,3 +191,6 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 html[lang="ms-MY"] .project-intro h1, html[lang="en"] .project-intro h1 { font-size: clamp(1.35rem, 2.5vw, 2.15rem); }
 html[lang="ms-MY"] .project-intro__copy > p, html[lang="en"] .project-intro__copy > p { font-size: clamp(1rem, 1.4vw, 1.2rem); }
 @media (max-width: 700px) { html[lang="ms-MY"] .project-intro h1, html[lang="en"] .project-intro h1 { font-size: 1rem; } }
+
+.project-intro__copy { width: min(1100px, 100%); text-align: center; margin-inline: auto; }
+.project-intro__copy > p { width: min(980px, 100%); margin-inline: auto; text-align: center; }
