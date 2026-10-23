@@ -1,3 +1,5 @@
 
 /* Load the artwork as a standalone SVG for reliable GitHub Pages rendering. */
 .what-is-moodify__accessories img{content:url(assets/images/kanan-moodify.svg)!important;}
+
+.what-is-moodify__accessories img{content:url(../images/kanan-moodify.svg)!important;}
