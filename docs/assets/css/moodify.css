@@ -194,3 +194,5 @@ html[lang="ms-MY"] .project-intro__copy > p, html[lang="en"] .project-intro__cop
 
 .project-intro__copy { width: min(1100px, 100%); text-align: center; margin-inline: auto; }
 .project-intro__copy > p { width: min(980px, 100%); margin-inline: auto; text-align: center; }
+
+.project-intro__copy > p:last-child { width: 100%; margin-left: auto; margin-right: auto; text-align: center; }
