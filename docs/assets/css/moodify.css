@@ -197,3 +197,6 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 .project-intro__logos img:first-child{width:min(48vw,310px)!important}.project-intro__logos img:last-child{width:min(39vw,260px)!important}
 @media(max-width:700px){.project-intro__logos img:first-child{width:min(52vw,245px)!important}.project-intro__logos img:last-child{width:min(42vw,195px)!important}}
 
+
+/* Keep complete researcher portraits visible in the homepage team cards. */
+.team-inline .team-photo{aspect-ratio:4/5!important;object-fit:contain!important;object-position:center top!important;background:#f6f6f6}
