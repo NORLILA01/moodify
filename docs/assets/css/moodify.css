@@ -214,3 +214,5 @@ html[lang="ms-MY"] .project-intro__copy > p, html[lang="en"] .project-intro__cop
 
 .what-is-moodify__accessories{min-height:0;display:flex;align-items:center;justify-content:center}.what-is-moodify__accessories img{display:block;width:100%;max-width:360px;height:auto;object-fit:contain;filter:drop-shadow(0 16px 20px rgba(21,43,70,.12))}.what-is-moodify__accessories .moodify-orbit,.what-is-moodify__accessories .moodify-spark{display:none}
 @media(max-width:760px){.what-is-moodify__accessories{min-height:0;max-width:320px}.what-is-moodify__accessories img{max-width:320px}}
+
+.what-is-moodify__accessories > div{display:none!important}.what-is-moodify__accessories{background:none!important;border:0!important;box-shadow:none!important}
