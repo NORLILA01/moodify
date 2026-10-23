@@ -196,3 +196,5 @@ html[lang="ms-MY"] .project-intro__copy > p, html[lang="en"] .project-intro__cop
 .project-intro__copy > p { width: min(980px, 100%); margin-inline: auto; text-align: center; }
 
 .project-intro__copy > p:last-child { width: 100%; margin-left: auto; margin-right: auto; text-align: center; }
+
+.team-promo{padding:clamp(2.5rem,6vw,5rem) 1.5rem;text-align:center;background:var(--surface);border-top:1px solid var(--border)}.team-promo .container{max-width:900px}.team-promo h2{margin:.3rem auto .8rem}.team-promo p:not(.eyebrow){max-width:700px;margin:0 auto 1.4rem;color:var(--ink-soft)}
