@@ -418,3 +418,5 @@
 
 
 (function(){function uncrop(){document.querySelectorAll('.team-inline .team-photo').forEach(function(img){img.style.setProperty('aspect-ratio','auto','important');img.style.setProperty('height','auto','important');img.style.setProperty('max-height','none','important');img.style.setProperty('object-fit','contain','important');img.style.setProperty('object-position','center top','important');});} if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',uncrop); else uncrop();})();
+
+(function(){var inner=document.querySelector('.what-is-moodify__inner');if(!inner||inner.querySelector('.kanan-moodify-art'))return;var img=document.createElement('img');img.className='kanan-moodify-art';img.alt='Moodify students exploring emotions';img.src='assets/images/KANAN%20MOODIFY.png';img.onerror=function(){this.src='assets/KANAN%20MOODIFY.png';};inner.appendChild(img);})();
