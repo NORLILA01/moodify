@@ -204,3 +204,6 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 .team-inline .team-photo{aspect-ratio:auto!important;height:auto!important;max-height:none!important;object-fit:initial!important;object-position:initial!important;background:transparent!important}
 
 .team-inline .team-grid .team-card img,.team-inline img.team-photo{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:fill!important;object-position:center top!important}
+
+/* Remove the artwork beside What Is Moodify while preserving the copy. */
+.what-is-moodify__accessories{display:none!important}.what-is-moodify__inner{display:block!important}.what-is-moodify__copy{max-width:760px;margin:0 auto}
