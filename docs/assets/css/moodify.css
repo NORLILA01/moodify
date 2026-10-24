@@ -217,3 +217,6 @@ html[data-palette="c"] .comic-page { background: #FFF9FF; }
 
 .what-is-moodify__inner{grid-template-columns:minmax(0,58fr) minmax(320px,42fr)!important}.kanan-moodify-art{max-width:520px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important}
 @media(max-width:760px){.what-is-moodify__inner{display:block!important}.kanan-moodify-art{width:min(94vw,520px)!important;max-width:520px!important;margin:1.75rem auto 0!important}}
+
+.what-is-moodify__inner{grid-template-columns:minmax(0,55fr) minmax(360px,45fr)!important;gap:clamp(2rem,4vw,4rem)!important}.kanan-moodify-art{max-width:600px!important;width:100%!important}
+@media(max-width:760px){.what-is-moodify__inner{display:block!important}.kanan-moodify-art{width:min(94vw,600px)!important;max-width:600px!important;margin:1.75rem auto 0!important}}
